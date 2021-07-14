@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://@rmariuzzo/mariuzzo.com/./src/pages/index.tsx"],"names":[],"mappings":"0JAMA,UAJ4B,WAC1B,OAAO,gCAAG","file":"component---src-pages-index-tsx-a45adc3dec8a95fcacbf.js","sourcesContent":["import * as React from 'react'\n\nconst IndexPage: React.FC = () => {\n  return <>{'<3'}</>\n}\n\nexport default IndexPage\n"],"sourceRoot":""}
