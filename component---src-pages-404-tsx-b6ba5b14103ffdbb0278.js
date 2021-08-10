@@ -1,0 +1,2 @@
+(self.webpackChunk_rmariuzzo_mariuzzo_com=self.webpackChunk_rmariuzzo_mariuzzo_com||[]).push([[218],{938:function(e,n,t){"use strict";t.r(n);var r=t(7294),l=t(5444);n.default=function(){return r.createElement("main",null,r.createElement("title",null,"Not found"),r.createElement("h1",null,"Page not found"),r.createElement("p",null,"Sorry we couldn’t find what you were looking for.",r.createElement("br",null),r.createElement(l.rU,{to:"/"},"Go home"),"."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-b6ba5b14103ffdbb0278.js.map
