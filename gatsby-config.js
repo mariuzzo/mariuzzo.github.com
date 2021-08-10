@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: 'https://www.mariuzzo.com',
     title: 'Mariuzzo'
   },
-  plugins: [{ resolve: 'gatsby-plugin-typescript' }]
+  plugins: [
+    { resolve: 'gatsby-plugin-typescript' },
+    { resolve: 'gatsby-plugin-styled-components' }
+  ]
 }
