@@ -1,0 +1,33 @@
+---
+layout: post
+date: 2016-03-07T05:00:00.000
+tags:
+- hodgkin
+- hodgkinslymphoma
+- lymphoma
+- sonography
+- pancreas
+- liver
+- kidney
+- bladder
+- gallbladder
+- appendix
+- prostate
+title: Monday, March 7th, 2016
+slug: /cancer/2016-03-07
+---
+![](https://64.media.tumblr.com/7ec469e617caaf0978d82ada68fa2ce0/tumblr_o5yrtta2gM1vsn3evo1_1280.jpg)
+
+I went for the sonography to verify if there’s any other internal organs that look suspicious.
+
+I got the results 20 minutes after the procedure. So far, everything inside me looks OK. 
+
+ - ✔ Pancreas.
+ - ✔ Liver.
+ - ✔ 2 x Kidney.
+ - ✔ Bladder.
+ - ✔ Gallbladder.
+ - ✔ Appendix.
+ - ✔ Prostate.
+
+So far, so good.

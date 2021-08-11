@@ -1,0 +1,13 @@
+---
+layout: post
+date: 2021-05-15T11:29:03.000
+tags:
+- hodgkin
+- lymphoma
+- hodgkinslymphoma
+- beacopp
+- cancer
+title: "Blood count"
+slug: /cancer/2021-05-15
+---
+<h1>Blood count tests</h1><p>Right now, I'm in a laboratory to check how my blood counts are. Will try to update with the results and comparison from last months.</p>

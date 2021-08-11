@@ -1,0 +1,11 @@
+---
+layout: post
+date: 2021-03-01T20:15:46.000
+tags:
+- cancer
+- hodgkinslymphoma
+- beacopp
+title: "Another doctor appointment"
+slug: /cancer/2021-03-01
+---
+Today, we had our doctor appointment. The doctor and the committee confirmed the evidence: _the cancer is back_. They recommended a more aggressive chemotherapy regimen called [BEACOPP](https://en.wikipedia.org/wiki/BEACOPP). But first, they need to run a few tests for: blood, viruses, vitamin D and creatinine. Also I have to get an ecography. All this to determine if my body is strong enough to support this new treatment. 

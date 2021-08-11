@@ -1,0 +1,17 @@
+---
+layout: post
+date: 2021-03-22T10:57:00.000
+tags:
+- Hodgkin
+- Lymphoma
+- BEACOPP
+title: "Custom Treatment"
+slug: /cancer/2021-03-22
+---
+On Monday 22nd I had another appointment with my doctor appointment. She explained to us that the recommended treatment protocol will be adapted to my case.
+
+The recommended protocol for me is BEACOPP which is usually administered in cycles of 21 days. There's a more intensive regimen with cycles of 14 days. **In my case it will be cycles of 28 days**.
+
+Also, in any of theses cycles the days 1, 2, 3 and 8 the patient need to go to the hospital for IV drugs and from days 1-14 take oral drugs at home. All these aforementioned drugs are cytotoxic parts of the chemotherapy. **In my case, I will only take oral drugs from days 1-4.**
+
+Finally, the BEACOPP treatment, where each letter is a drug, consists of 7 drugs: 5 IVs and 2 oral drugs. **In my case, I will get all IVs and just one of the oral drugs for a few days.**

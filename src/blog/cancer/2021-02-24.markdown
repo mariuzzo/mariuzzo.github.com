@@ -1,0 +1,15 @@
+---
+layout: post
+date: 2021-02-24T17:52:33.000
+tags:
+- cancer
+- lymphoma
+- hodgkinlymphoma
+title: "PET Results"
+slug: /cancer/2021-02-24
+---
+Today, we got the results from the last PET scan:
+
+> PET study with evidence of metabolically active lymphomatous disease in lymphadenopathy described in the thorax, abdomen and pelvis.
+
+I'm feeling fine and relaxed to know that. More on that later.

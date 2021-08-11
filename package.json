@@ -25,6 +25,9 @@
   "dependencies": {
     "@fontsource/source-sans-pro": "^4.5.0",
     "gatsby": "^3.11.1",
+    "gatsby-plugin-manifest": "^3.11.0",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-remark": "^4.8.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
