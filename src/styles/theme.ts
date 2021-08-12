@@ -17,7 +17,14 @@ export const theme = {
     l1: toFontSizeUnits(48),
     l2: toFontSizeUnits(36),
     l3: toFontSizeUnits(24),
-    copy: toFontSizeUnits(20)
+    copy1: toFontSizeUnits(20),
+    copy2: toFontSizeUnits(16)
+  },
+  fontWeight: {
+    light: 300,
+    regular: 400,
+    semiBold: 600,
+    black: 900
   },
   transition: {
     default: 'ease-in-out .3s all'

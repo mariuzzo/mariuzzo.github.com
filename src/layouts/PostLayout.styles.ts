@@ -10,7 +10,7 @@ export const PostCategory = styled.div`
   text-align: center;
   margin: 3rem 0;
   font-size: ${$theme.fontSize.l2.rem}rem;
-  font-weight: 300;
+  font-weight: ${$theme.fontWeight.light};
   opacity: 0.5;
 `
 
@@ -18,7 +18,7 @@ export const PostTitle = styled.h1`
   color: ${$theme.color.primary};
   text-align: center;
   font-size: ${$theme.fontSize.l1.rem}rem;
-  font-weight: 900;
+  font-weight: ${$theme.fontWeight.black};
   line-height: 1.5em;
   margin: 0;
 `
@@ -31,8 +31,8 @@ export const PostDate = styled.small`
 export const PostContents = styled.article`
   color: ${$theme.color.copy};
   margin-top: 3rem;
-  font-size: ${$theme.fontSize.copy.rem}rem;
-  font-weight: 400;
+  font-size: ${$theme.fontSize.copy1.rem}rem;
+  font-weight: ${$theme.fontWeight.regular};
   line-height: 1.5;
 
   img {
@@ -43,7 +43,7 @@ export const PostContents = styled.article`
 
   a {
     color: ${$theme.color.secondary};
-    font-weight: 600;
+    font-weight: ${$theme.fontWeight.semiBold};
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
 
@@ -57,7 +57,7 @@ export const PostContents = styled.article`
   }
 
   strong {
-    font-weight: 900;
+    font-weight: ${$theme.fontWeight.black};
   }
 `
 
@@ -65,12 +65,12 @@ export const PostFooter = styled.footer`
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   margin-top: 2rem;
-  font-size: ${$theme.fontSize.copy.rem}rem;
+  font-size: ${$theme.fontSize.copy1.rem}rem;
 `
 
 const previousAndNextLinkStyles = css`
   text-decoration: none;
-  font-weight: 900;
+  font-weight: ${$theme.fontWeight.black};
   color: ${$theme.color.secondary};
 
   &:hover > span {

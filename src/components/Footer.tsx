@@ -4,7 +4,7 @@ import * as S from './Footer.styles'
 export const Footer: React.FC = (props) => {
   return (
     <S.Container {...props}>
-      <code>.</code>
+      <S.BrandInitial>M</S.BrandInitial>ariuzzo
     </S.Container>
   )
 }

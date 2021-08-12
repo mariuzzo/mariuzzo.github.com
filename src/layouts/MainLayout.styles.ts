@@ -5,5 +5,5 @@ export const Container = styled.div`
   grid-template-columns: 100%;
   max-width: 800px;
   margin: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 `

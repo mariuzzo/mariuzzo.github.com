@@ -13,14 +13,7 @@ export const Header = () => {
             <S.NavMenuLink to="/">Home</S.NavMenuLink>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <S.NavMenuLink to="https://github.com/rmariuzzo" target="_blank">
-              GitHub
-            </S.NavMenuLink>
-          </S.NavMenuItem>
-          <S.NavMenuItem>
-            <S.NavMenuLink to="https://twitter.com/rmariuzzo" target="_blank">
-              Twitter
-            </S.NavMenuLink>
+            <S.NavMenuLink to="/cancer">Cancer</S.NavMenuLink>
           </S.NavMenuItem>
         </S.NavMenu>
       </S.Nav>

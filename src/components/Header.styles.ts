@@ -6,10 +6,12 @@ export const Container = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  margin: 20px 0;
+  margin: 2rem 0;
 `
 
-export const Brand = styled.h1`
+export const Brand = styled.div`
+  font-weight: ${$theme.fontWeight.black};
+  font-size: ${$theme.fontSize.l2.rem}rem;
   line-height: 1.25em;
   grid-column: 1;
   margin: 0;
@@ -38,7 +40,7 @@ export const NavMenu = styled.ul`
   padding: 0;
   display: grid;
   column-gap: 2em;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
 `
 
 export const NavMenuItem = styled.li``
