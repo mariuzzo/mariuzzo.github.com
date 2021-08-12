@@ -27,7 +27,7 @@ type CancerPageProps = {
 const CancerPage: React.FC<CancerPageProps> = ({ data, ...more }) => {
   const { allMarkdownRemark } = data
   const posts = allMarkdownRemark.edges.map((e) => e.node)
-  console.log(posts)
+
   return (
     <MainLayout {...more}>
       <S.Title>Recent posts about my cancer</S.Title>

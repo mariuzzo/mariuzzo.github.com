@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { formatRFC7231 } from 'date-fns'
+
 import * as S from './PostLayout.styles'
 import { MainLayout } from './MainLayout'
 
@@ -25,7 +27,7 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
       <S.Container>
         <S.PostCategory>{category}</S.PostCategory>
         <S.PostTitle>{title}</S.PostTitle>
-        <S.PostDate>{date}</S.PostDate>
+        <S.PostDate>{formatRFC7231(date)}</S.PostDate>
         <S.PostContents dangerouslySetInnerHTML={{ __html: contents }} />
         <S.PostFooter>
           {previousSlug && (

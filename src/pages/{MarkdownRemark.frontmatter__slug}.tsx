@@ -1,8 +1,32 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
+import { parseISO } from 'date-fns'
+
 import { PostLayout } from '../layouts/PostLayout'
 
-export default function Template({ data }) {
+type TemplateProps = {
+  data: {
+    markdownRemark: {
+      html: string
+      frontmatter: {
+        date: string
+        slug: string
+        title: string
+      }
+    }
+    allMarkdownRemark: {
+      edges: Array<{
+        node: {
+          frontmatter: {
+            slug: string
+          }
+        }
+      }>
+    }
+  }
+}
+
+const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const { markdownRemark, allMarkdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const slugs = allMarkdownRemark.edges.map(
@@ -11,11 +35,11 @@ export default function Template({ data }) {
   const previousSlug = slugs[slugs.indexOf(frontmatter.slug) - 1]
   const nextSlug = slugs[slugs.indexOf(frontmatter.slug) + 1]
 
-  console.log(data)
   return (
     <PostLayout
+      {...more}
       title={frontmatter.title}
-      date={frontmatter.date}
+      date={parseISO(frontmatter.date)}
       category="Cancer"
       contents={html}
       previousSlug={previousSlug}
@@ -23,6 +47,8 @@ export default function Template({ data }) {
     />
   )
 }
+
+export default Template
 
 export const pageQuery = graphql`
   query ($id: String!) {
