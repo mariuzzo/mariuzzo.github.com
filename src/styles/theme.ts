@@ -5,12 +5,12 @@ const toFontSizeUnits = (px: number) => ({ px, rem: px / unit })
 
 export const theme = {
   color: {
-    copy: '#202020',
-    background: '#f9f8f8',
-    primary: '#022050',
-    secondary: '#0075a2',
-    warning: '#e3b23c',
-    error: '#9c3848'
+    copy: '#3D3D3D',
+    copyLight: '#707070',
+    background: '#F6F4F4',
+    link: '#695CFF',
+    primary: '#D4353A',
+    secondary: '#C7C2FF'
   },
   fontSize: {
     base: toFontSizeUnits(unit),

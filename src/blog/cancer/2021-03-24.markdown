@@ -1,11 +1,25 @@
 ---
-layout: post
 date: 2021-03-24T10:30:07.000
-tags:
-- hodgkin
-- lymphoma
-- beacopp
-title: "BEACOPP: Day 1 (1st cycle)"
+title: 'Day 1, 1st cycle: BEACOPP'
 slug: /cancer/2021-03-24
 ---
-<p>According to the&nbsp;<a href="https://en.wikipedia.org/wiki/BEACOPP">dosis regimen for BEACOPP</a>&nbsp;the first day consist of 5 out of 7 cytotoxic drugs (as shown below highlighted in red).</p><figure data-orig-width="718" data-orig-height="472" class="tmblr-full"><img src="https://64.media.tumblr.com/8badfa4af1cc9e238119bf580fb8c62a/cd79b94cf7d82bda-47/s540x810/9806393066626995b3e754401195fb9212efe61a.png" data-orig-width="718" data-orig-height="472"></figure><p>As documented before, for my diagnosis the doctor took out the <b>P</b>&nbsp;(for Procarbazine) for my treatment. For the 1st day of the cycle I will be taking (<b>EAC</b>) as intravenous infusion (1 hour each) and <b>P</b>&nbsp;(for Prednisone) a 75mg tablet.</p><h2>How was my day in the hospital?</h2><p>We arrived at 8:00am, but the treatment started by 2:00pm. We finished by 5.30pm. The reason for the morning delay, is because all treatment cubicles were already in use (there are 12-14 cubicle at the hospital) and we were put in a queue. During the queue I told Mimi a bad joke, that was so bad that she had uncontrollable laugh (we both cried laughing; I don&rsquo;t remember the joke sorry).</p><h2>Post Mortem</h2><p>At the hospital, I felt <b>regular</b>. I drove back home and was feeling <b>uncomfortable</b>. And when I arrived I felt a bit dizzy like floating, heart rate increased a bit and had a headache, it felt <b>horrible</b> inside, but nothing serious.</p><p>I didn&rsquo;t had appetite, but I had half of a chicken soup. Then I took the <b>P</b> (Prednisone) at home by 8:00pm. Didn&rsquo;t feel any change in my body. Later by 9:30pm had the other half for the soup, ate a slice of bread with peanut butter and lemon jam. Almost that I drank a lot of water so I could excret the toxicity of the drugs ASAP.</p><p>We went to bed by 10:00pm, woke up a 1:00am because my bladder told so, and had a good night sleep until 5:30am.</p><p><i>I thank Jehovah God for giving me the second best gift in life: Mimi, my love, my friend, my support... and now, my nurse.</i></p>
+
+According to the [dosis regimen for BEACOPP](https://en.wikipedia.org/wiki/BEACOPP)</a> the first day consist of 4 cytotoxic drugs and a corticosteroid (as shown below highlighted in red).
+
+![The dosis regimen for BEACOPP](/images/cancer/8badfa4af1cc9e238119bf580fb8c62a_98063930.png)
+
+As documented before, for my diagnosis the doctor took out the **P** (for **P**rocarbazine) from my treatment. On the 1st day of each cycle I will be taking **EAC** (cytotoxic drugs) intravenously (1 hour each) and **P** (for **P**rednisone) orally in a 75mg tablet.
+
+## How was my day in the hospital?
+
+We arrived at 8:00am, but the treatment started by 2:00pm. We finished by 5:30pm. The reason for the morning delay, is because all treatment cubicles were already in use (there are 12 cubicle at the hospital) and we were put in a queue. During the queue I told Mimi a bad joke, that was so bad that she had an uncontrollable laugh (we both cried laughing; I don't remember the joke sorry 😓).
+
+## Post Mortem
+
+At the hospital, I felt **regular**. I drove back home and was feeling **uncomfortable**. And when I arrived I felt a bit dizzy like floating, heart rate increased a bit and had a headach. I felt **horrible** inside, but nothing serious.
+
+I didn't had appetite, but I ate half of a chicken soup. Then I took the **P** (Prednisone) at home by 8:00pm. Didn't feel any change in my body. Later by 9:30pm had the other half of the soup, ate a slice of bread with peanut butter and lemon jam. Also, during the day I drank a lot of water so I could excret the toxicity of the drugs ASAP.
+
+We went to bed by 10:00pm, woke up a 1:00am because my bladder told so, and had a good night sleep until 5:30am.
+
+_**I thank Jehovah God for giving me the second best gift in life: Mimi, my love, my friend, my support... and now, my nurse.**_

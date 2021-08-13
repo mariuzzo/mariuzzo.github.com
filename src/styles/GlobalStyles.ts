@@ -22,4 +22,9 @@ export const GlobalStyles = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  *:focus {
+    outline-color: ${$theme.color.link};
+    outline-offset: .5rem;
+  }
 `

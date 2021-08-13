@@ -1,15 +1,6 @@
 ---
-layout: post
 date: 2016-04-06T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- immunohistochemistry
-- nodular
-- esclerosis
-- haematologist
-title: Wednesday, April 6, 2016
+title: Immunohistochemistry results
 slug: /cancer/2016-04-06
 ---
 
@@ -17,7 +8,7 @@ Today, I received the results of the _immunohistochemistry_ from the US. **The a
 
 I went straight to the haematologist, in a private health center, to get details about possible treatments. But, I quit the private health center because their “policy” can’t tell or give an idea to the patient on how much the treatment cost… totally absurd.
 
-I remembered something that I read and studied that says: 
+I remembered something that I read and studied that says:
 
 > ‘in this greedy world, there are those who seize on people’s illness as an opportunity to make money’.
 

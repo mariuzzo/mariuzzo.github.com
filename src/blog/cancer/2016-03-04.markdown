@@ -1,15 +1,11 @@
 ---
-layout: post
 date: 2016-03-04T05:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
 title: Friday, March 4, 2016
 slug: /cancer/2016-03-04
 ---
-![](https://64.media.tumblr.com/8b423fef19d198785956f914ec2ee6c2/tumblr_o5ynnsjO2W1vsn3evo1_1280.jpg)
 
-I went to the _[haematologist](https://en.wikipedia.org/wiki/Hematology)_, and she examined my body. So far the swollen lymph nodes are located only in the right side of my neck. 
+![Red wall](/images/cancer/o5yp0e5u9q1vsn3evo1.jpg)
+
+I went to the [haematologist](https://en.wikipedia.org/wiki/Hematology), and she examined my body. So far the swollen lymph nodes are located only in the right side of my neck.
 
 She indicated me 31 blood related tests. And told me that the otorhinolaryngologist has to extract from my neck one or more swollen lymph nodes for examination.

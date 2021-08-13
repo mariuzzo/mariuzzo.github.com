@@ -1,25 +1,28 @@
 import * as React from 'react'
 import { GatsbyLinkProps, Link as GatsbyLink } from 'gatsby'
 
+import * as S from './Link.styles'
+
 export const Link: React.FC<GatsbyLinkProps<any>> = (props) => {
   const { children, to, activeClassName, partiallyActive, ...more } = props
   const internal = /^\/(?!\/)/.test(to)
 
   if (internal) {
     return (
-      <GatsbyLink
+      <S.InternalLink
         to={to}
         activeClassName={activeClassName}
         partiallyActive={partiallyActive}
         {...(more as any)}
       >
         {children}
-      </GatsbyLink>
+      </S.InternalLink>
     )
   }
+
   return (
-    <a href={to} {...more}>
+    <S.ExternalLink href={to} {...(more as any)}>
       {children}
-    </a>
+    </S.ExternalLink>
   )
 }

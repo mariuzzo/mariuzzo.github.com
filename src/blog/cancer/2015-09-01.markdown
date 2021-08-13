@@ -1,13 +1,9 @@
 ---
-layout: post
 date: 2015-09-01T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-title: September, 2015
+title: A small ball
 slug: /cancer/2015-09-01
 ---
-![](https://64.media.tumblr.com/ede57f498a016218af2935761747d926/tumblr_o5yk4f03BA1vsn3evo1_1280.jpg)
 
-Someday, at night, I felt a _“small ball”_ in the right side of my neck. While examining it, I was thinking on what could it be. Mosquitos? Unknown insects? Since it was something I could only perceive by touch, not visible, I decided to let it go and check daily from that day.
+![A small ball](/images/cancer/o5yk4f03BA1vsn3evo1.jpg)
+
+Someday, at night, I felt a **“small ball”** in the right side of my neck. While examining it, I was thinking on what could it be. Mosquitos? Unknown insects? Since it was something I could only perceive by touch, not visible, I decided to let it go and check daily from that day.

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { $theme } from '../styles/theme'
 import { Link } from './Link'
 
@@ -9,7 +10,9 @@ export const Container = styled.header`
   margin: 2rem 0;
 `
 
-export const Brand = styled.div`
+export const Brand = styled(Link)`
+  color: ${$theme.color.copy};
+  text-decoration: none;
   font-weight: ${$theme.fontWeight.black};
   font-size: ${$theme.fontSize.l2.rem}rem;
   line-height: 1.25em;
@@ -44,14 +47,3 @@ export const NavMenu = styled.ul`
 `
 
 export const NavMenuItem = styled.li``
-
-export const NavMenuLink = styled(Link)`
-  color: ${$theme.color.secondary};
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
-
-  &:hover {
-    color: ${$theme.color.primary};
-    text-decoration-color: ${$theme.color.secondary};
-  }
-`

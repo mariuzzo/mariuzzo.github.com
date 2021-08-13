@@ -1,21 +1,12 @@
 ---
-layout: post
 date: 2016-06-10T03:31:39.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- psalm 30
-- chemo
-- chemotherapy
-- abvd
-- high fever
-title: Thursday, June 9th, 2016
+title: 3rd chemo
 slug: /cancer/2016-06-10-2
 ---
-![](https://64.media.tumblr.com/4bf96e13fe3ac788ef3165e3de7b1e68/tumblr_o8jdsrnQHi1vsn3evo1_1280.jpg)
 
-I don't like to be negative. Today, I got my 3rd dose of chemo and it was **painful, stressful and crumbling**. As you may notice, in the beginning of this week I got a [Neutropia](http://gothodgkin.tumblr.com/post/145615002863/monday-june-6th-2016-today-i-went-to-my) which mean my white blood cells count was very low, under the reference range. Also, I injected myself with [Filgrastim](http://gothodgkin.tumblr.com/post/145619428888/wednesday-june-8th-2016-today-i-accomplished) to estimulate the bone marrow to produce the needed white blood cells, and cover the loss. All this, produced me a high fever that started at the end of the chemo dose which I didn't detected. I was feeling really frozen I got a white shirt under my t-shirt plus a jacket. The nurse gave me a coat, and my wife game another coat. Even with all these things covering me, I was trembling of cold.
+![3rd chemo](/images/cancer/o8jdsrnQHi1vsn3evo1.jpg)
+
+I don't like to be negative. Today, I got my 3rd dose of chemo and it was **painful, stressful and crumbling**. As you may notice, in the beginning of this week I got a **Neutropenia** which mean my white blood cells count was very low, under the reference range. Also, I injected myself with **Filgrastim** to estimulate the bone marrow to produce the needed white blood cells, and cover the loss. All this, produced me a high fever that started at the end of the chemo dose which I didn't detected. I was feeling really frozen I got a white shirt under my t-shirt plus a jacket. The nurse gave me a coat, and my wife gave me another one. Even with all these things covering me, I was trembling of cold.
 
 Then it wasn't until I get home that I used a thermometer to check my temperature under my armpit, it was: 39.4C which is considered as a high fever ([taking the temp under the armpit is less accurate than oral or rectal](http://www.webmd.com/first-aid/fever-in-adults-treatment#1)).
 
@@ -23,21 +14,21 @@ I was feeling dizzy. I just wanted to be layed down on my bed. My extraordinary 
 
 Today, the word of Jehovah God came to my mind (one that most of us has recently read):
 
-> **Psalm 30:1-5:** 
+**[Psalm 30:1-5](https://www.jw.org/finder?wtlocale=E&pub=nwtsty&srctype=wol&bible=19030001&srcid=share)**:
 
-> I will exalt you, O Jehovah, for _you have lifted me up_;
-You did not let my enemies rejoice over me.
-
-> 2 O Jehovah my God, _I cried to you for help, and you healed me_.
-
-> 3 O Jehovah, _you have lifted me up from the Grave_.
-You kept me alive; you spared me from sinking into the pit.
-
+> I will exalt you, O Jehovah, for **you have lifted me up**;
+> You did not let my enemies rejoice over me.
+>
+> 2 O Jehovah my God, **I cried to you for help, and you healed me**.
+>
+> 3 O Jehovah, **you have lifted me up from the Grave**.
+> You kept me alive; you spared me from sinking into the pit.
+>
 > 4 Sing praises to Jehovah, you his loyal ones,
-_Give thanks to his holy name_;
-
+> **Give thanks to his holy name**;
+>
 > 5 Because being under his anger is only for a moment,
-But _being in his favor is for a lifetime_.
-Weeping may come in the evening, but _in the morning, there is a joyful cry_.
+> But **being in his favor is for a lifetime**.
+> Weeping may come in the evening, but **in the morning, there is a joyful cry**.
 
-Cursives are mine.
+Bold are mine.

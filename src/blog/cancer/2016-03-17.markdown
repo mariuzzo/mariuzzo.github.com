@@ -1,17 +1,9 @@
 ---
-layout: post
 date: 2016-03-17T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- biopsy
-- ganglionar
-title: Tuesday, March 17, 2016
+title: Surgery
 slug: /cancer/2016-03-17
 ---
-![](https://64.media.tumblr.com/2b8dc783ebc08fbe3fd2efba5fd8625b/tumblr_o5ytquLzbu1vsn3evo1_1280.jpg)
 
-Today I went for **surgery** ([Lymph node biopsy](https://www.nlm.nih.gov/medlineplus/ency/article/003933.htm)). She retired one of the swollen lymph nodes for test. The surgeron recommended me to rest for 7 days. And to not take sun on that side for 2 months.
+Today I went for **surgery** ([Lymph node biopsy](https://www.nlm.nih.gov/medlineplus/ency/article/003933.htm)). The surgeon retired one of the swollen lymph nodes for test. She recommended me to rest for 7 days. And to not take sun on that side for 2 months.
 
 **Fun facts:** They gave me an anaesthesia for children… and it put me down in less than 10 seconds. Later, when I tried to woke up, and fought during 30 mins before I was capable to clearly think and act.

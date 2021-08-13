@@ -1,21 +1,13 @@
 ---
-layout: post
 date: 2016-07-05T04:00:00.000
-tags:
-- hodgkin
-- hodgkinlymphoma
-- lymphoma
-- abvd
-- blood test
-- blood count
 title: Tuesday, July 5th, 2016
 slug: /cancer/2016-07-05
 ---
-![](https://64.media.tumblr.com/70f2dc5f2ebfe7bf3ce60cc9e3714907/tumblr_o9vm5uLC4c1vsn3evo1_1280.png)
+
+![Results](/images/cancer/o9vm5uLC4c1vsn3evo1.png)
 
 I haven't wrote in a while. **I'm not dead, nor dying**. The side effects of the 4th chemo were normal and well known. To be short, I had nauseas, pain in the chest, and my veins from my left arm got burnt. However, today I'm good, not feeling any of these annoying side effects.
 
-Yesterday, I made regular blood test and as you can see in the graph, everything is going down (again). But, they look just a little bit better than the last tests. The first two lines are my white and red blood cells (respectively). Then, we have the haemogloblin and hematocrit. All of them under the normal range. Looks like, [I will need to prepare my mind and soul to inject myself with Filgastrim, again](http://gothodgkin.tumblr.com/post/145619428888/wednesday-june-8th-2016-today-i-accomplished). 😅
+Yesterday, I made regular blood test and as you can see in the graph, everything is going down (again). But, they look just a little bit better than the last tests. The first two lines are my white and red blood cells (respectively). Then, we have the haemogloblin and hematocrit. All of them under the normal range. Looks like, I will need to prepare my mind and soul to inject myself with Filgastrim, again. 😅
 
 That's it for now! Tomorrow, I have an appointment with my doctor to see if I'm ready for the 3rd cycle of [the treatment](https://en.wikipedia.org/wiki/ABVD) (5th & 6th chemos).
-

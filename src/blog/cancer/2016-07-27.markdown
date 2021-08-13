@@ -1,16 +1,9 @@
 ---
-layout: post
 date: 2016-07-27T19:45:46.000
-tags:
-- hodgkin
-- lymphoma
-- hodgkinslymphoma
-- chemo
-- abvd
-- chemotherapy
-title: Wednesday, July 27th, 2016
+title: '6th chemo: Wednesday, July 27th, 2016'
 slug: /cancer/2016-07-27
 ---
-![](https://64.media.tumblr.com/e90c947e0123dcf29d2bea068aa7d7b3/tumblr_oazo8a35Uu1vsn3evo1_1280.jpg)
+
+![6th chemo](/images/cancer/oazo8a35Uu1vsn3evo1.jpg)
 
 Today was my 6th chemo. Everything went fine. Now, I will relax and sleep.

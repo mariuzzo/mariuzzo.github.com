@@ -1,18 +1,10 @@
 ---
-layout: post
 date: 2016-09-12T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- chemo
-- abvd
-- ninth
-- vincristine
-title: Monday 12th, September 2016
+title: '9th chemo: Monday 12th, September 2016'
 slug: /cancer/2016-09-12
 ---
-![](https://64.media.tumblr.com/75569edb9e9ab68dae261fa1c0adcaa1/tumblr_odm7aizWtb1vsn3evo1_1280.jpg)
+
+![9th chemo](/images/cancer/odm7aizWtb1vsn3evo1.jpg)
 
 This chemo session was good. Although there were some issues with the drainpipes, I didn't feel any kind of pain regarding the [Dacarbazine](https://en.wikipedia.org/wiki/Dacarbazine).
 

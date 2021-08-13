@@ -1,17 +1,13 @@
 ---
-layout: post
 date: 2016-03-03T05:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-title: March 3, 2016
+title: Otorhinolaryngologist appointment
 slug: /cancer/2016-03-03
 ---
-![](https://64.media.tumblr.com/e360eb96332c3dbaaeb7a0f688c398b7/tumblr_o5ymwnF9au1vsn3evo1_1280.jpg)
 
-Today, I went to the doctor (an otorhinolaryngologist) and I brought to her the results of my lymph node biopsy. The results says it could be a **lymphoma**. 
+![Painting](/images/cancer/o5ymwnF9au1vsn3evo1.jpg)
+
+Today, I went to the doctor (an otorhinolaryngologist) and I brought to her the results of my lymph node biopsy. The results says it could be a **lymphoma**.
 
 The doctor made an urgent appointment to an haematologist by tomorrow. Next week I have to visit 3 different doctors: an anaesthesiologist and a cardiologist for surgery preparation, then after that I need to visit again my otorhinolaryngologist. All of this is to schedule a surgery in 2 weeks.
 
-The surgery is to extract an entire lymph node from my neck. The sample will be analysed locally, then it will be send to the US for a more complete analysis (inmunohistochemistry). The conclusions will led us to know what I could have, and what possible solutions exists.
+The surgery is to extract an entire lymph node from my neck. The sample will be analysed locally, then it will be send to the US for a more complete analysis (immunohistochemistry). The conclusions will led us to know what I could have, and what possible solutions exists.

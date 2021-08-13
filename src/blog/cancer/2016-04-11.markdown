@@ -1,17 +1,10 @@
 ---
-layout: post
 date: 2016-04-11T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- bone
-- marrow
-- biopsy
-title: Monday, April 11th, 2016
+title: Bone marrow biopsy
 slug: /cancer/2016-04-11
 ---
-![](https://64.media.tumblr.com/79e25bfffec155e891a22a618e4fc601/tumblr_o5yw3sdUuX1vsn3evo1_1280.jpg)
+
+![Bone marrow biopsy](/images/cancer/o5yw3sdUuX1vsn3evo1.jpg)
 
 I returned to the Hospital. I came to do everything I could. I did all blood tests minus 2. Also, I had _rendez-vous_ with the haematologist to have the bone marrow biopsy… **WHICH. I. DID. NOT. KNOW. WHAT. IT. IS. ABOUT**​
 

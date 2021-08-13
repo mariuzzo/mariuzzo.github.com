@@ -1,13 +1,9 @@
 ---
-layout: post
 date: 2016-03-05T05:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
 title: Saturday, March 5, 2016
 slug: /cancer/2016-03-05
 ---
-![](https://64.media.tumblr.com/142d7ac1e1723c30d586dd30b0835119/tumblr_o5yp0e5u9q1vsn3evo1_1280.jpg)
+
+![Microscope](/images/cancer/o5yp0e5u9q1vsn3evo1.jpg)
 
 In the morning I went for the 31 blood related tests. They took 14 blood tubes 💉. I felt dizzy. They sucked out part of my life

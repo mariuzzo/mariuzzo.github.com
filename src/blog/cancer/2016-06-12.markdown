@@ -1,14 +1,7 @@
 ---
-layout: post
 date: 2016-06-12T02:48:16.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- chemo
-title: "Saturday, June 11th, 2016"
+title: '3rd chemo: 2nd day'
 slug: /cancer/2016-06-12
 ---
-## Day 2 of first chemo from 2nd cycle (third chemo)
 
-Today, I woke up with a lot of nauseas. They started earlier than usual. Drinking Passion Fruit juice make me feel better.
+Today, I woke up with a lot of nauseas. They started earlier than usual. Drinking _passion fruit juice_ makes me feel better.

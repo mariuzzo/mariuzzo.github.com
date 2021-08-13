@@ -1,11 +1,7 @@
 ---
-layout: post
 date: 2020-12-22T04:14:12.000
-tags:
-- hodgkin
-- lymphoma
-- cancersurvivor
-title: "PET scan"
+title: 'A second PET scan'
 slug: /cancer/2020-12-22
 ---
-<h1>Another PET scan</h1><p>Last week, I had a doctor appointment and they recommended me to have a PET scan. That will my second one.</p>
+
+Last week, I had a doctor appointment and they recommended me to have a PET scan. That will be my second one since I started this fight on 2016.

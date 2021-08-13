@@ -1,25 +1,19 @@
 ---
-layout: post
 date: 2016-07-12T13:40:03.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- vincristine
-- vinblastine
 title: Tuesday, July 12th, 2016
 slug: /cancer/2016-07-12
 ---
-![](https://64.media.tumblr.com/c8656ea510bb88bfb799a81dc08d8b5a/tumblr_oa7farYp161vsn3evo1_1280.jpg)
 
-[Yesterday](http://gothodgkin.tumblr.com/post/147265322913/5th-chemo), I wanted to talk more about the Vinblastine and the Vincristine. I will do this now in this post as a personal resarch based on interesting information I found in the net.
+![](/images/cancer/oa7farYp161vsn3evo1.jpg)
 
-The gold standard chemotherapy regimen for treating Hodgkin Lymphoma is, at the time of writing this, the [ABVD](https://en.wikipedia.org/wiki/ABVD) (V for Vinblastine). It has been in use since a a couple of decades. The predecessor of ABVD in the '60s was the MOPP (O for Oconvin, AKA Vincristine). Basically, Vincristine do the same on treating cancer cells as Vinblastine. One of the main differences of the Vincristine or the reason it was replaced is, quoting Wikipedia:
+Yesterday, I wanted to talk more about the _Vinblastine_ and the _Vincristine_. I will do this now in this post as a personal resarch based on interesting information I found in the net.
+
+The gold standard chemotherapy regimen for treating Hodgkin Lymphoma is, at the time of writing this, the [ABVD](https://en.wikipedia.org/wiki/ABVD) (V for _Vinblastine_). It has been in use since a a couple of decades. The predecessor of ABVD in the '60s was the MOPP (**O** for Oconvin, AKA _Vincristine_). Basically, _Vincristine_ do the same on treating cancer cells as _Vinblastine_. One of the main differences of the _Vincristine_ or the reason it was replaced is, quoting Wikipedia:
 
 > The main side effects of vincristine are chemotherapy-induced peripheral neuropathy, hyponatremia, constipation, and hair loss.
 
 > Chemotherapy-induced peripheral neuropathy can be severe, and may be a reason to reduce or avoid using vincristine. The symptoms of this are progressive and enduring tingling numbness, pain and hypersensitivity to cold, beginning in the hands and feet and sometimes affecting the arms and legs. One of the first symptoms of peripheral neuropathy is foot drop: A person with a family history of foot drop and/or Charcot-Marie-Tooth disease (CMT) should avoid the taking of vincristine.
 
-Basically, both Vinblastine and Vincristine cause chemotherapy-induced peripheral neuropathy, but looks like the one due to Vincristine tend to be more severe.
+Basically, both _Vinblastine_ and _Vincristine_ cause chemotherapy-induced peripheral neuropathy, but looks like the one due to _Vincristine_ tend to be more severe.
 
-Finally, an interesting fact: the flower in the picture attached to this post is where the Vinblastine and Vincristine are obtained along with a bunch of other components. The name is of that flower: [Madagascar periwinkle](https://en.wikipedia.org/wiki/Catharanthus_roseus). Here in DR we can found this flower everywhere. We are so close of certain sources.
+Finally, an interesting fact: the flower in the picture attached to this post is where the _Vinblastine_ and _Vincristine_ are obtained along with a bunch of other components. The name of that flower is: [Madagascar periwinkle](https://en.wikipedia.org/wiki/Catharanthus_roseus). Here in DR we can found this flower everywhere. Sometimes, we are so close of certain sources.

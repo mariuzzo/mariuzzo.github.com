@@ -22,7 +22,7 @@ export const PostCardListItem = styled.li``
 
 export const PostCard = styled(Link)`
   display: block;
-  border: ${$theme.color.secondary} solid 2px;
+  border: ${$theme.color.primary} solid 2px;
   padding: 1rem;
   border-radius: 2px;
   text-decoration: none;
@@ -30,7 +30,7 @@ export const PostCard = styled(Link)`
   color: ${$theme.color.copy};
 
   &:hover {
-    background-color: ${$theme.color.secondary}0A;
+    background-color: ${$theme.color.primary}0A;
   }
 `
 
@@ -38,7 +38,7 @@ export const PostCardTitle = styled.h3`
   font-size: ${$theme.fontSize.l3.rem}rem;
   margin: 0 0 1rem 0;
   line-height: 1;
-  color: ${$theme.color.secondary};
+  /* color: ${$theme.color.primary}; */
 `
 
 export const PostCardMeta = styled.div``

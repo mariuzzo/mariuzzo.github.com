@@ -1,16 +1,11 @@
 ---
-layout: post
 date: 2016-06-02T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- blood test
-title: Thursday, June 2nd, 2016
+title: Blood Tests
 slug: /cancer/2016-06-02
 ---
-![](https://64.media.tumblr.com/b4efe724150c3ad48b98edc569c1e37b/tumblr_o8gnh5dUXP1vsn3evo1_1280.jpg)
+
+![Blood sample](/images/cancer/o8gnh5dUXP1vsn3evo1.jpg)
 
 Today, I will have my first [blood test](https://en.wikipedia.org/wiki/Blood_test). I have to do that after the 2nd dose of chemo for each [cycle](https://en.wikipedia.org/wiki/ABVD#Administration) then bring the results to my doctor.
 
-I will have the results in a few hours. I will update tomorrow.
+I will have the results in a few hours. I will post an update tomorrow.

@@ -1,20 +1,13 @@
 ---
-layout: post
 date: 2016-09-27T04:00:00.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- chemo
-- abvd
-- vincristine
-title: Tuesday, September 27th, 2016
+title: '10th chemo: Tuesday, September 27th, 2016'
 slug: /cancer/2016-09-27
 ---
-![](https://64.media.tumblr.com/cc8e78e729f8d32021309e93674aa246/tumblr_oeacgcta851vsn3evo1_1280.jpg)
 
-All right! Today was my 10th chemo! Got a few issues getting the Vincristine because it was out of stock at the hospital. We had drive to another hospital to buy it. Thanks Jehovah, we did it!
+![](/images/cancer/oeacgcta851vsn3evo1.jpg)
 
-Apart from that, I learnt that Vinblastine is back on market, again. Let see, if I can reschedule a meeting with my doctor and see if we can get Vinblastine instead of Vincristine.
+All right! Today was my 10th chemo! Got a few issues getting the _Vincristine_ because it was out of stock at the hospital. We had to drive to another hospital to buy it. Thanks Jehovah, we got it there!
+
+Apart from that, I learnt that _Vinblastine_ is back on market, again. Let see, if I can reschedule a meeting with my doctor and see if we can get _Vinblastine_ instead of _Vincristine_.
 
 **Two more to go!**

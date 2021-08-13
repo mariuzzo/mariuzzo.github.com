@@ -1,19 +1,12 @@
 ---
-layout: post
 date: 2016-05-17T22:28:40.000
-tags:
-- hodgkin
-- hodgkinslymphoma
-- lymphoma
-- first chemo
-- abvd
-- chemotherapy
-title: Tuesday, May 17, 2016
+title: First week of first chemo
 slug: /cancer/2016-05-17
 ---
-![](https://64.media.tumblr.com/929334e4641e0e96623c9dd704fa206d/tumblr_o7cefs1Ujt1vsn3evo1_1280.jpg)
 
-Finally, a week has been passed after [my first chemo](http://gothodgkin.tumblr.com/post/144180882458/tuesday-may-10-2016-today-was-my-first). That day, I didn't feel anything too strange on me. Now, I have the time to post an update about those other days!
+![First week of first chemo](/images/cancer/o7cefs1Ujt1vsn3evo1.jpg)
+
+Finally, a week has been passed after my first chemo. That day, I didn't feel anything too strange on me. Now, I have the time to post an update about those other days!
 
 ## 1st day after the chemo
 
@@ -41,18 +34,18 @@ Ah! Something begun to be recurrent: one of my arms feels like burning. The one 
 
 ## 6th day after the chemo
 
-Ok, most of the symptoms are now gone! But my right arm still felt like burning. **Things are getting serious.** But, as far as it didn't swell is not something to worry too much. I heard among patient that a Heating Pad helps a lot.
+Ok, most of the symptoms are now gone! But my right arm still felt like burning. **Things are getting serious.** But, as far as it doesn't swell it is not something to worry too much. I heard among patients that a _Heating Pad_ helps a lot.
 
 ## 7th day after the chemo (today)
 
-No fun at all with the burning arm. The pain woke me up twice last night. My wife had to put on my a warm woolen cloth. Then in the morning, we went to a pharmacy and purchased a Heating Pad. So good! Now it is bearable.
+No fun at all with the burning arm. The pain woke me up twice last night. My wife had to put on my a warm woolen cloth. Then in the morning, we went to a pharmacy and purchased a _Heating Pad_. So good! Now it is bearable.
 
-<hr>
+---
 
 And that's it! That week was truly painful. Now, I understand why people say things like: “I'm fighting the cancer”. That's a true battle for a hope to survive.
 
 Anyway, I have found truly comfort on those word:
 
- > Jehovah will sustain him on his sickbed; During his sickness you will completely change his bed.
- >
- > Psalm 41:3
+> Jehovah will sustain him on his sickbed; During his sickness you will completely change his bed.
+>
+> **[Psalm 41:3](https://www.jw.org/finder?wtlocale=E&pub=nwtsty&srctype=wol&bible=19041003&srcid=share)**

@@ -1,15 +1,9 @@
 ---
-layout: post
 date: 2018-08-22T01:11:35.000
-tags:
-- hodgkin
-- hodgkinlymphoma
-- hodgkinslymphoma
-- afterchemo
-- chemo
-title: "662 days after"
+title: '662 days after'
 slug: /cancer/2018-08-22-2
 ---
+
 Yes, I'm still alive. I'm one of the priviledged one that can live after death.
 
 I have visited the doctors several times since my last chemo, and she said there's no trace of Hodgkin. However, my body isn't the same, I still feel weak, have headache, backache, sore throat, pain in the mouth, pain in my right knee, an injury in the perineum and so on. Ah, forgot to mention weird patterns in my tongue.
