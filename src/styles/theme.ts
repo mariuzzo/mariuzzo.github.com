@@ -9,7 +9,7 @@ export const theme = {
     copyLight: '#707070',
     background: '#F6F4F4',
     link: '#695CFF',
-    primary: '#D4353A',
+    primary: '#695CFF',
     secondary: '#C7C2FF'
   },
   fontSize: {
