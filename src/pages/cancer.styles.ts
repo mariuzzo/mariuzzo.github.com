@@ -39,7 +39,6 @@ export const PostCardTitle = styled.h3`
   font-size: ${$theme.fontSize.l3.rem}rem;
   margin: 0 0 1rem 0;
   line-height: 1;
-  /* color: ${$theme.color.primary}; */
 `
 
 export const PostCardMeta = styled.div``

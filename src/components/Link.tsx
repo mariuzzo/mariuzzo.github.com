@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { GatsbyLinkProps, Link as GatsbyLink } from 'gatsby'
+import { GatsbyLinkProps } from 'gatsby'
 
 import * as S from './Link.styles'
 

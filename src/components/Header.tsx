@@ -12,10 +12,13 @@ export const Header = () => {
       <S.Nav>
         <S.NavMenu>
           <S.NavMenuItem>
-            <Link to="/">Home</Link>
+            <S.NavMenuLink to="/">Home</S.NavMenuLink>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <Link to="/cancer">Cancer</Link>
+            <S.NavMenuLink to="/cancer">Cancer</S.NavMenuLink>
+          </S.NavMenuItem>
+          <S.NavMenuItem>
+            <S.NavMenuLink to="/about">About</S.NavMenuLink>
           </S.NavMenuItem>
         </S.NavMenu>
       </S.Nav>

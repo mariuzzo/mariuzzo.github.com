@@ -43,7 +43,14 @@ export const NavMenu = styled.ul`
   padding: 0;
   display: grid;
   column-gap: 2em;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
 `
 
 export const NavMenuItem = styled.li``
+
+export const NavMenuLink = styled(Link)`
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+`
