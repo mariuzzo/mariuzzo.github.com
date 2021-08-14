@@ -46,7 +46,7 @@ export const AboutPage: React.FC = () => {
         </p>
         <ul>
           <li>
-            <strong>JavaScript</strong> since 2006, using NodeJS, React and
+            <strong>JavaScript</strong> since 2006. Now using NodeJS, React and
             Redux.
           </li>
           <li>

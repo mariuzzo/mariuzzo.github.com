@@ -29,7 +29,6 @@ export const PageTitle = styled.h1`
 
 export const TextBlock = styled.div`
   color: ${$theme.color.copy};
-  margin: 3rem 0;
   font-size: ${$theme.fontSize.copy1.rem}rem;
   font-weight: ${$theme.fontWeight.regular};
   line-height: 1.5;
@@ -50,5 +49,9 @@ export const TextBlock = styled.div`
 
   strong {
     font-weight: ${$theme.fontWeight.black};
+  }
+
+  pre {
+    overflow-x: auto;
   }
 `

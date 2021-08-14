@@ -6,8 +6,10 @@ import { Link } from './Link'
 export const Header = () => {
   return (
     <S.Container>
-      <S.Brand to="/">
-        <S.BrandFirstLetter>M</S.BrandFirstLetter>ariuzzo
+      <S.Brand>
+        <S.BrandLink to="/">
+          <span>M</span>ariuzzo
+        </S.BrandLink>
       </S.Brand>
       <S.Nav>
         <S.NavMenu>

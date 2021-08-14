@@ -4,6 +4,11 @@ const unit = 16
 const toFontSizeUnits = (px: number) => ({ px, rem: px / unit })
 
 export const theme = {
+  breakpoints: {
+    mobile: '320px',
+    tablet: '768px',
+    desktop: '1000px'
+  },
   color: {
     copy: '#3D3D3D',
     copyLight: '#707070',
