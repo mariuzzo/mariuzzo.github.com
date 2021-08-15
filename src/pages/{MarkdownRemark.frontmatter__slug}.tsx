@@ -29,18 +29,28 @@ type TemplateProps = {
 const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const { markdownRemark, allMarkdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const slugs = allMarkdownRemark.edges.map(
-    (edge) => edge.node.frontmatter.slug
-  )
+
+  const categoryId = frontmatter.slug.split('/')[1]
+
+  const slugs = allMarkdownRemark.edges
+    .map((edge) => edge.node.frontmatter.slug)
+    .filter((slug) => slug.split('/')[1] === categoryId)
   const previousSlug = slugs[slugs.indexOf(frontmatter.slug) - 1]
   const nextSlug = slugs[slugs.indexOf(frontmatter.slug) + 1]
+
+  const category =
+    categoryId === 'cancer'
+      ? 'Cancer'
+      : categoryId === 'code'
+      ? 'Code'
+      : 'Secret'
 
   return (
     <PostLayout
       {...more}
       title={frontmatter.title}
       date={parseISO(frontmatter.date)}
-      category="Cancer"
+      category={category}
       contents={html}
       previousSlug={previousSlug}
       nextSlug={nextSlug}

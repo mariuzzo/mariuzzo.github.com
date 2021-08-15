@@ -8,9 +8,13 @@ import { Link } from './Link'
 export const Container = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
-  row-gap: 1rem;
+  row-gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
+
+  ${up('tablet')} {
+    margin: 2rem 0;
+  }
 `
 
 export const Brand = styled.div`
@@ -28,7 +32,7 @@ export const BrandLink = styled(Link)`
   color: ${$theme.color.copy};
   text-decoration: none;
   font-weight: ${$theme.fontWeight.black};
-  font-size: ${$theme.fontSize.l2.rem}rem;
+  font-size: ${$theme.fontSize.l2}rem;
   line-height: 1.25em;
   margin: 0;
 
@@ -64,9 +68,21 @@ export const NavMenu = styled.ul`
   display: grid;
   column-gap: 2em;
   grid-template-columns: repeat(3, auto);
+
+  ${up('tablet')} {
+    grid-template-columns: repeat(4, auto);
+  }
 `
 
-export const NavMenuItem = styled.li``
+export const NavMenuItem = styled.li`
+  &:first-child {
+    display: none;
+
+    ${up('tablet')} {
+      display: block;
+    }
+  }
+`
 
 export const NavMenuLink = styled(Link)`
   &:hover {

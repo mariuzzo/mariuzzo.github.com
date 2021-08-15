@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.mariuzzo.com`,
@@ -9,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/blog/cancer`
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`
       }
     },
     { resolve: `gatsby-transformer-remark` },

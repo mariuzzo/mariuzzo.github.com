@@ -2,9 +2,9 @@ import { graphql } from 'gatsby'
 import * as React from 'react'
 import { parseISO } from 'date-fns'
 
-import { CancerPostsListView } from '../views/CancerPostsListView'
+import { CodePostsListView } from '../views/CodePostsListView'
 
-type CancerPageProps = {
+type CodePageProps = {
   data: {
     allMarkdownRemark: {
       edges: Array<{
@@ -21,7 +21,7 @@ type CancerPageProps = {
   }
 }
 
-const CancerPage: React.FC<CancerPageProps> = ({ data, ...more }) => {
+const CodePage: React.FC<CodePageProps> = ({ data, ...more }) => {
   const posts = data.allMarkdownRemark.edges.map((e) => ({
     id: e.node.id,
     title: e.node.frontmatter.title,
@@ -29,13 +29,13 @@ const CancerPage: React.FC<CancerPageProps> = ({ data, ...more }) => {
     slug: e.node.frontmatter.slug
   }))
 
-  return <CancerPostsListView {...more} posts={posts} />
+  return <CodePostsListView {...more} posts={posts} />
 }
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { slug: { regex: "/^/cancer//" } } }
+      filter: { frontmatter: { slug: { regex: "/^/code//" } } }
       sort: { fields: frontmatter___date, order: DESC }
       limit: 10
     ) {
@@ -53,4 +53,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default CancerPage
+export default CodePage

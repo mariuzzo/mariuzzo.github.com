@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import { Link } from '../components/Link'
 
+import { Link } from '../components/Link'
+import { PageTitle } from '../components/Typography'
 import { $theme } from '../styles/theme'
 
-export const Title = styled.h2`
-  font-size: ${$theme.fontSize.l2.rem}rem;
-  margin: 0;
-  line-height: 1;
+export const Title = styled(PageTitle)`
+  color: ${$theme.color.copy};
 `
 
 export const PostCardList = styled.ol`
@@ -36,7 +35,7 @@ export const PostCard = styled(Link)`
 `
 
 export const PostCardTitle = styled.h3`
-  font-size: ${$theme.fontSize.l3.rem}rem;
+  font-size: ${$theme.fontSize.l3}rem;
   margin: 0 0 1rem 0;
   line-height: 1;
 `
@@ -45,5 +44,5 @@ export const PostCardMeta = styled.div``
 
 export const PostCardDateDistance = styled.span`
   font-weight: ${$theme.fontWeight.light};
-  font-size: ${$theme.fontSize.copy2.rem}rem;
+  font-size: ${$theme.fontSize.copy2}rem;
 `

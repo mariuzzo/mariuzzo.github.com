@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import * as S from './Header.styles'
-import { Link } from './Link'
 
 export const Header = () => {
   return (
@@ -15,6 +14,9 @@ export const Header = () => {
         <S.NavMenu>
           <S.NavMenuItem>
             <S.NavMenuLink to="/">Home</S.NavMenuLink>
+          </S.NavMenuItem>
+          <S.NavMenuItem>
+            <S.NavMenuLink to="/code">Code</S.NavMenuLink>
           </S.NavMenuItem>
           <S.NavMenuItem>
             <S.NavMenuLink to="/cancer">Cancer</S.NavMenuLink>

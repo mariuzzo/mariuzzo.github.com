@@ -1,7 +1,9 @@
 import { shorted } from 'shorted-theme'
 
 const unit = 16
-const toFontSizeUnits = (px: number) => ({ px, rem: px / unit })
+const px2rem = (px: number) => {
+  return px / unit
+}
 
 export const theme = {
   breakpoints: {
@@ -18,12 +20,12 @@ export const theme = {
     secondary: '#C7C2FF'
   },
   fontSize: {
-    base: toFontSizeUnits(unit),
-    l1: toFontSizeUnits(48),
-    l2: toFontSizeUnits(36),
-    l3: toFontSizeUnits(24),
-    copy1: toFontSizeUnits(20),
-    copy2: toFontSizeUnits(16)
+    base: px2rem(unit),
+    l1: px2rem(48),
+    l2: px2rem(36),
+    l3: px2rem(24),
+    copy1: px2rem(20),
+    copy2: px2rem(16)
   },
   fontWeight: {
     light: 300,

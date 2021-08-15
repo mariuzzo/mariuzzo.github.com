@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
+import { up } from 'styled-breakpoints'
 
 import { PageTitle, TextBlock } from '../components/Typography'
 import { Link } from '../components/Link'
 import { $theme } from '../styles/theme'
-import { linkStyles } from '../components/Link.styles'
 
 export const Container = styled.div``
 
@@ -11,9 +11,18 @@ export const PostCategory = styled.div`
   display: block;
   color: ${$theme.color.secondary};
   text-align: center;
-  margin: 3rem 0;
-  font-size: ${$theme.fontSize.l2.rem}rem;
+  margin: 1rem 0;
+  font-size: ${$theme.fontSize.l3}rem;
   font-weight: ${$theme.fontWeight.light};
+
+  ${up('tablet')} {
+    font-size: ${$theme.fontSize.l2}rem;
+    margin: 2rem 0;
+  }
+
+  ${up('desktop')} {
+    margin: 3rem 0;
+  }
 `
 
 export const PostTitle = styled(PageTitle)``
@@ -32,7 +41,7 @@ export const PostFooter = styled.footer`
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   margin-top: 2rem;
-  font-size: ${$theme.fontSize.copy1.rem}rem;
+  font-size: ${$theme.fontSize.copy1}rem;
 `
 
 const previousAndNextLinkStyles = css`
