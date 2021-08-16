@@ -20,7 +20,7 @@ export const Heading2 = styled.h2`
 `
 
 export const PageTitle = styled.h1`
-  color: ${$theme.color.link};
+  color: ${$theme.color.copy};
   text-align: center;
   font-size: ${$theme.fontSize.l2}rem;
   font-weight: ${$theme.fontWeight.black};
@@ -59,5 +59,11 @@ export const TextBlock = styled.div`
 
   pre {
     overflow-x: auto;
+  }
+
+  *:not(pre) > code {
+    background-color: ${$theme.color.copyLight}22;
+    border-radius: 0.2em;
+    padding: 0.1em 0.5em;
   }
 `

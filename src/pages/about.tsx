@@ -21,7 +21,7 @@ export const AboutPage: React.FC = () => {
           <a href="https://ipl.edu.do/">IPL</a>.
         </p>
         <p>
-          I'm currently working at <a href="https://x-team.com/">X-Team</a> as
+          I'm currently working at <a href="https://x-team.com/">X-Team</a> as a
           full stack web developer{' '}
           <a href="https://x-team.com/case-studies/">
             helping leading companies to succeed
