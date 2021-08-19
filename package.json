@@ -20,7 +20,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build && gh-pages -d public -b gh-pages",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "new-post": "ts-node ./scripts/new-post.ts"
   },
   "dependencies": {
     "@fontsource/source-sans-pro": "^4.5.0",
