@@ -5,7 +5,6 @@ import { $theme } from '../styles/theme'
 
 export const linkStyles = css`
   color: ${$theme.color.link};
-  font-weight: ${$theme.fontWeight.semiBold};
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 
