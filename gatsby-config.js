@@ -33,6 +33,17 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         ignore: [`**/*.styles.(js|ts)?(x)`]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-BVNP5VG5EZ'],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          head: true,
+          respectDNT: true
+        }
+      }
     }
   ]
 }
