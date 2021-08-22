@@ -32,7 +32,7 @@ The [npm.js docs](https://docs.npmjs.com/files/package.json#bin) and popular Nod
 
 Similar as other shell script, we want to make our JavaScript file executable by the locally installed node program. We do that adding a [shebang character sequence](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) at the very top of our JavaScript file that look as follow:
 
-```
+```shell
 #!/usr/bin/env node
 ```
 

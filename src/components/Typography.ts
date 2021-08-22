@@ -58,12 +58,25 @@ export const TextBlock = styled.div`
   }
 
   pre {
-    overflow-x: auto;
+    border-radius: 0.2em;
+  }
+
+  code {
+    font-family: 'Source Code Pro', Consolas, Monaco, 'Andale Mono',
+      'Ubuntu Mono', monospace;
+    font-size: 0.85em;
   }
 
   *:not(pre) > code {
-    background-color: ${$theme.color.copyLight}22;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
+    background-color: #27282288;
+  }
+
+  blockquote {
+    font-style: italic;
+    margin: 1em;
+    padding: 0 1em;
+    border-left: ${$theme.color.copyLight} solid 2px;
   }
 `

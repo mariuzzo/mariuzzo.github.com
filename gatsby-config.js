@@ -17,7 +17,30 @@ module.exports = {
         path: `${__dirname}/src/markdown`
       }
     },
-    { resolve: `gatsby-transformer-remark` },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: `language-`,
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [],
+              prompt: {
+                user: `root`,
+                host: `localhost`,
+                global: false
+              },
+              escapeEntities: {}
+            }
+          }
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -41,7 +64,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ['G-BVNP5VG5EZ'],
-        // This object is used for configuration specific to this plugin
         pluginConfig: {
           head: true,
           respectDNT: true
