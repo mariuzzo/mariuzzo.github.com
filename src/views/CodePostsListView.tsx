@@ -21,7 +21,11 @@ export const CodePostsListView: React.FC<CodePostsListViewProps> = ({
 }) => {
   return (
     <MainLayout {...more}>
-      <S.Title>Recent posts about code</S.Title>
+      <S.Title>
+        Recent posts about
+        <br />
+        code
+      </S.Title>
       <S.PostCardList>
         {posts.map((post) => (
           <S.PostCardListItem key={post.id}>

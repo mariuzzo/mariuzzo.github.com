@@ -10,16 +10,16 @@ const IndexPage: React.FC = () => {
     <MainLayout>
       <SEO title="Home" />
       <TextBlock>
-        <code>
-          <pre>
+        <pre className="language-javascript">
+          <code className="language-javascript">
             // TODO: Complete website...
             <br />
             // I'm currently fighting a cancer again. This is the second time.
             <br />
             // I created a blog about it, which I'm migrating{' '}
             <Link to="/lymphoma">here</Link>.
-          </pre>
-        </code>
+          </code>
+        </pre>
       </TextBlock>
     </MainLayout>
   )
