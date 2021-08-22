@@ -22,7 +22,7 @@ async function newPost() {
     type: 'list',
     name: 'postType',
     choices: [
-      { name: 'Cancer', value: 'cancer' },
+      { name: 'Lymphoma', value: 'lymphoma' },
       { name: 'Code', value: 'code' }
     ]
   })

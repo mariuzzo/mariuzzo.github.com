@@ -1,0 +1,143 @@
+import * as React from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
+
+type SEOProps = {
+  title: string
+  description?: string
+  lang?: string
+  meta?: Array<{
+    name?: string
+    content?: string
+    property?: string
+  }>
+  image?: {
+    src: string
+    height: number
+    width: number
+  }
+  pathname?: string
+}
+
+export const SEO: React.FC<SEOProps> = ({
+  description,
+  lang,
+  meta,
+  image,
+  title,
+  pathname
+}) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+            keywords
+            siteUrl
+          }
+        }
+      }
+    `
+  )
+
+  const metaDescription = description || site.siteMetadata.description
+  const metaImage =
+    image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
+  return (
+    <Helmet
+      htmlAttributes={{
+        lang
+      }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: 'canonical',
+                href: canonical
+              }
+            ]
+          : []
+      }
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription
+        },
+        {
+          name: 'keywords',
+          content: site.siteMetadata.keywords.join(',')
+        },
+        {
+          property: `og:title`,
+          content: title
+        },
+        {
+          property: `og:description`,
+          content: metaDescription
+        },
+        {
+          property: `og:type`,
+          content: `website`
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author
+        },
+        {
+          name: `twitter:title`,
+          content: title
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription
+        }
+      ]
+        .concat(
+          image
+            ? [
+                {
+                  property: 'og:image',
+                  content: metaImage
+                },
+                {
+                  property: 'og:image:width',
+                  content: image.width
+                },
+                {
+                  property: 'og:image:height',
+                  content: image.height
+                },
+                {
+                  name: 'twitter:card',
+                  content: 'summary_large_image'
+                }
+              ]
+            : [
+                {
+                  name: 'twitter:card',
+                  content: 'summary'
+                }
+              ]
+        )
+        .concat(meta as any)}
+    />
+  )
+}
+
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``,
+  image: {
+    src: '/images/icon.png',
+    height: 1040,
+    width: 1040
+  }
+}

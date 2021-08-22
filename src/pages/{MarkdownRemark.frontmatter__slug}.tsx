@@ -39,8 +39,8 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const nextSlug = slugs[slugs.indexOf(frontmatter.slug) + 1]
 
   const category =
-    categoryId === 'cancer'
-      ? 'Cancer'
+    categoryId === 'lymphoma'
+      ? 'Lymphoma'
       : categoryId === 'code'
       ? 'Code'
       : 'Secret'

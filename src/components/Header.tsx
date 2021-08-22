@@ -19,7 +19,7 @@ export const Header = () => {
             <S.NavMenuLink to="/code">Code</S.NavMenuLink>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <S.NavMenuLink to="/cancer">Cancer</S.NavMenuLink>
+            <S.NavMenuLink to="/lymphoma">Lymphoma</S.NavMenuLink>
           </S.NavMenuItem>
           <S.NavMenuItem>
             <S.NavMenuLink to="/about">About</S.NavMenuLink>

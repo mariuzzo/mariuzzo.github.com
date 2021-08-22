@@ -1,18 +1,25 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 
-// markup
+import { MainLayout } from '../layouts/MainLayout'
+import { PageTitle, TextBlock } from '../components/Typography'
+import { InternalLink } from '../components/Link.styles'
+import { SEO } from '../components/SEO'
+
 const NotFoundPage = () => {
   return (
-    <main>
-      <title>Not found</title>
-      <h1>Page not found</h1>
-      <p>
-        Sorry we couldn’t find what you were looking for.
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <MainLayout>
+      <SEO
+        title="Page not found"
+        description="Sorry we couldn’t find what you were looking for."
+      />
+      <PageTitle>Page not found</PageTitle>
+      <TextBlock>
+        <p>Sorry we couldn’t find what you were looking for.</p>
+        <p>
+          <InternalLink to="/">Go home</InternalLink>.
+        </p>
+      </TextBlock>
+    </MainLayout>
   )
 }
 

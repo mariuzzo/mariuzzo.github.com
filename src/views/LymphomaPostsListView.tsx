@@ -4,9 +4,9 @@ import { formatRFC7231 } from 'date-fns'
 import { MainLayout } from '../layouts/MainLayout'
 import { daysAgo } from '../utils/date'
 
-import * as S from './CancerPostsListView.styles'
+import * as S from './LymphomaPostsListView.styles'
 
-type CancerPostsListViewProps = {
+type LymphomaPostsListViewProps = {
   posts: Array<{
     id: string
     title: string
@@ -15,13 +15,17 @@ type CancerPostsListViewProps = {
   }>
 }
 
-export const CancerPostsListView: React.FC<CancerPostsListViewProps> = ({
+export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
   posts,
   ...more
 }) => {
   return (
     <MainLayout {...more}>
-      <S.Title>Recent posts about my cancer</S.Title>
+      <S.Title>
+        Recent posts about
+        <br />
+        my Hodgkin's Lymphoma
+      </S.Title>
       <S.PostCardList>
         {posts.map((post) => (
           <S.PostCardListItem key={post.id}>

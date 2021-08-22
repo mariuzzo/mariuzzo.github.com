@@ -6,6 +6,7 @@ const px2rem = (px: number) => {
 }
 
 export const theme = {
+  unit,
   breakpoints: {
     mobile: '320px',
     tablet: '768px',

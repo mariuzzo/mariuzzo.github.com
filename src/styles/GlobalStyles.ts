@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+
 import { $theme } from './theme'
 
 export const GlobalStyles = createGlobalStyle`
@@ -6,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Source Sans Pro', sans-serif;
     color: ${$theme.color.copy};
     background-color: ${$theme.color.background};
-    font-size: ${$theme.fontSize.base.px}px;
+    font-size: ${$theme.unit}px;
     padding: 0;
     margin: 0;
   }

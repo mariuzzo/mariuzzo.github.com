@@ -3,6 +3,7 @@ import * as React from 'react'
 import { parseISO } from 'date-fns'
 
 import { CodePostsListView } from '../views/CodePostsListView'
+import { SEO } from '../components/SEO'
 
 type CodePageProps = {
   data: {
@@ -29,7 +30,12 @@ const CodePage: React.FC<CodePageProps> = ({ data, ...more }) => {
     slug: e.node.frontmatter.slug
   }))
 
-  return <CodePostsListView {...more} posts={posts} />
+  return (
+    <>
+      <SEO title="Code" description="Recent posts about code." />
+      <CodePostsListView {...more} posts={posts} />
+    </>
+  )
 }
 
 export const pageQuery = graphql`

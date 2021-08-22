@@ -2,7 +2,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.mariuzzo.com`,
-    title: `Mariuzzo`
+    title: `Mariuzzo`,
+    description: `Experience on programming and lymphoma.`,
+    keywords: [`Code`, `Lymphoma`, `Blog`, `Rubens`, `Mariuzzo`],
+    author: `Rubens Mariuzzo`
   },
   plugins: [
     { resolve: `gatsby-plugin-typescript` },

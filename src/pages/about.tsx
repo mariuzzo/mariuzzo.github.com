@@ -1,12 +1,14 @@
 import * as React from 'react'
 
 import { Link } from '../components/Link'
+import { SEO } from '../components/SEO'
 import { Heading2, PageTitle, TextBlock } from '../components/Typography'
 import { MainLayout } from '../layouts/MainLayout'
 
 export const AboutPage: React.FC = () => {
   return (
     <MainLayout>
+      <SEO title="About" description="Who is Rubens Mariuzzo?" />
       <PageTitle>About Mariuzzo</PageTitle>
       <TextBlock>
         <p>
@@ -28,7 +30,7 @@ export const AboutPage: React.FC = () => {
           </a>
           . <strong>However, I have taken a pause to focus on my health</strong>
           . I write about my journey fighting a cancer on a{' '}
-          <Link to="/cancer">dedicated blog</Link>.
+          <Link to="/lymphoma">dedicated blog</Link>.
         </p>
         <p>
           When I'm not working, I am coding... Yes, this is a true hobby of

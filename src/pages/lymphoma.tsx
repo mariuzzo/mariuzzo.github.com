@@ -2,9 +2,10 @@ import { graphql } from 'gatsby'
 import * as React from 'react'
 import { parseISO } from 'date-fns'
 
-import { CancerPostsListView } from '../views/CancerPostsListView'
+import { LymphomaPostsListView } from '../views/LymphomaPostsListView'
+import { SEO } from '../components/SEO'
 
-type CancerPageProps = {
+type LymphomaPageProps = {
   data: {
     allMarkdownRemark: {
       edges: Array<{
@@ -21,7 +22,7 @@ type CancerPageProps = {
   }
 }
 
-const CancerPage: React.FC<CancerPageProps> = ({ data, ...more }) => {
+const LymphomaPage: React.FC<LymphomaPageProps> = ({ data, ...more }) => {
   const posts = data.allMarkdownRemark.edges.map((e) => ({
     id: e.node.id,
     title: e.node.frontmatter.title,
@@ -29,13 +30,18 @@ const CancerPage: React.FC<CancerPageProps> = ({ data, ...more }) => {
     slug: e.node.frontmatter.slug
   }))
 
-  return <CancerPostsListView {...more} posts={posts} />
+  return (
+    <>
+      <SEO title="Lymphoma" description="Recent posts about Lymphoma" />
+      <LymphomaPostsListView {...more} posts={posts} />
+    </>
+  )
 }
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { slug: { regex: "/^/cancer//" } } }
+      filter: { frontmatter: { slug: { regex: "/^/lymphoma//" } } }
       sort: { fields: frontmatter___date, order: DESC }
       limit: 10
     ) {
@@ -53,4 +59,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default CancerPage
+export default LymphomaPage
