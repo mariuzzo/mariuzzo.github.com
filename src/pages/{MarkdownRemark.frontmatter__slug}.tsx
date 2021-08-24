@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import { parseISO } from 'date-fns'
 
 import { PostLayout } from '../layouts/PostLayout'
+import { getBlogNameById } from '../utils/blog'
+import { SEO } from '../components/SEO'
 
 type TemplateProps = {
   data: {
@@ -38,23 +40,27 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const previousSlug = slugs[slugs.indexOf(frontmatter.slug) - 1]
   const nextSlug = slugs[slugs.indexOf(frontmatter.slug) + 1]
 
-  const category =
-    categoryId === 'lymphoma'
-      ? 'Lymphoma'
-      : categoryId === 'code'
-      ? 'Code'
-      : 'Secret'
+  const category = getBlogNameById(categoryId)
 
   return (
-    <PostLayout
-      {...more}
-      title={frontmatter.title}
-      date={parseISO(frontmatter.date)}
-      category={category}
-      contents={html}
-      previousSlug={previousSlug}
-      nextSlug={nextSlug}
-    />
+    <>
+      <SEO
+        title={frontmatter.title}
+        breadcrumbs={[
+          { name: category, url: `/${categoryId}` },
+          { name: frontmatter.title }
+        ]}
+      />
+      <PostLayout
+        {...more}
+        title={frontmatter.title}
+        date={parseISO(frontmatter.date)}
+        category={category}
+        contents={html}
+        previousSlug={previousSlug}
+        nextSlug={nextSlug}
+      />
+    </>
   )
 }
 

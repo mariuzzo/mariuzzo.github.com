@@ -17,6 +17,10 @@ type SEOProps = {
     width: number
   }
   pathname?: string
+  breadcrumbs?: Array<{
+    name: string
+    url?: string
+  }>
 }
 
 export const SEO: React.FC<SEOProps> = ({
@@ -25,7 +29,8 @@ export const SEO: React.FC<SEOProps> = ({
   meta,
   image,
   title,
-  pathname
+  pathname,
+  breadcrumbs = []
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -127,6 +132,34 @@ export const SEO: React.FC<SEOProps> = ({
               ]
         )
         .concat(meta as any)}
+      script={
+        breadcrumbs.length > 0
+          ? [
+              {
+                type: 'application/ld+json',
+                innerHTML: `
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [${JSON.stringify(
+                      breadcrumbs.map((crumb, i) => {
+                        const item: any = {
+                          '@type': 'ListItem',
+                          position: i + 1,
+                          name: crumb.name
+                        }
+                        if (crumb.url) {
+                          item.item = `${site.siteMetadata.siteUrl}${crumb.url}`
+                        }
+                        return item
+                      })
+                    )}]
+                  }
+                `
+              }
+            ]
+          : undefined
+      }
     />
   )
 }

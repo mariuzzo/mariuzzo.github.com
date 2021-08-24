@@ -3,7 +3,6 @@ import { formatRFC7231 } from 'date-fns'
 
 import * as S from './PostLayout.styles'
 import { MainLayout } from './MainLayout'
-import { SEO } from '../components/SEO'
 
 type PostLayoutProps = {
   title: string
@@ -25,7 +24,6 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
 }) => {
   return (
     <MainLayout {...more}>
-      <SEO title={title} />
       <S.Container>
         <S.PostCategory>{category}</S.PostCategory>
         <S.PostTitle>{title}</S.PostTitle>
