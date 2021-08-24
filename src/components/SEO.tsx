@@ -21,6 +21,7 @@ type SEOProps = {
     name: string
     url?: string
   }>
+  noIndex?: boolean
 }
 
 export const SEO: React.FC<SEOProps> = ({
@@ -30,7 +31,8 @@ export const SEO: React.FC<SEOProps> = ({
   image,
   title,
   pathname,
-  breadcrumbs = []
+  breadcrumbs = [],
+  noIndex = false
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -130,6 +132,16 @@ export const SEO: React.FC<SEOProps> = ({
                   content: 'summary'
                 }
               ]
+        )
+        .concat(
+          noIndex
+            ? [
+                {
+                  name: 'robots',
+                  content: 'noindex'
+                }
+              ]
+            : []
         )
         .concat(meta as any)}
       script={

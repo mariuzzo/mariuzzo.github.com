@@ -2,7 +2,6 @@ import { up } from 'styled-breakpoints'
 import styled from 'styled-components'
 
 import { $theme } from '../styles/theme'
-
 import { linkStyles } from './Link.styles'
 
 export const Heading1 = styled.h1`
@@ -25,7 +24,7 @@ export const PageTitle = styled.h1`
   font-size: ${$theme.fontSize.l2}rem;
   font-weight: ${$theme.fontWeight.black};
   line-height: 1em;
-  margin: 0.2em 0;
+  margin: 0.2em 0 2rem 0;
 
   ${up('tablet')} {
     font-size: ${$theme.fontSize.l1}rem;
@@ -79,4 +78,8 @@ export const TextBlock = styled.div`
     padding: 0 1em;
     border-left: ${$theme.color.copyLight} solid 2px;
   }
+`
+
+export const InlineCenter = styled.div`
+  text-align: center;
 `

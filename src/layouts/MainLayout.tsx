@@ -14,7 +14,7 @@ export const MainLayout: React.FC = ({ children }) => {
       <S.Container>
         <GlobalStyles />
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </S.Container>
     </ThemeProvider>

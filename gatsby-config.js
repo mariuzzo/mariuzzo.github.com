@@ -69,6 +69,9 @@ module.exports = {
           respectDNT: true
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-meta-redirect`
     }
   ]
 }
