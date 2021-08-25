@@ -7,7 +7,7 @@ type LinkProps = {
   variant?: 'inline' | 'block'
 }
 
-const linkInlineStyles = css`
+export const linkInlineStyles = css`
   color: ${$theme.color.link};
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;

@@ -2,7 +2,8 @@ import { up } from 'styled-breakpoints'
 import styled from 'styled-components'
 
 import { $theme } from '../styles/theme'
-import { linkStyles } from './Link.styles'
+
+import { linkInlineStyles } from './Link.styles'
 
 export const Heading1 = styled.h1`
   font-weight: ${$theme.fontWeight.black};
@@ -45,7 +46,7 @@ export const TextBlock = styled.div`
   }
 
   a {
-    ${linkStyles};
+    ${linkInlineStyles};
   }
 
   p {
