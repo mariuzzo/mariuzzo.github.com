@@ -43,7 +43,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: { frontmatter: { slug: { regex: "/^/lymphoma//" } } }
       sort: { fields: frontmatter___date, order: DESC }
-      limit: 10
     ) {
       edges {
         node {
