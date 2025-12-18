@@ -19,7 +19,7 @@ slug: {slug}
 async function newPost() {
   const { postType } = await prompt({
     message: 'What type of new post to be created?',
-    type: 'list',
+    type: 'select',
     name: 'postType',
     choices: [
       { name: 'Lymphoma', value: 'lymphoma' },
