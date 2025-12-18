@@ -42,8 +42,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       filter: { frontmatter: { slug: { regex: "/^/code//" } } }
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: 10
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
