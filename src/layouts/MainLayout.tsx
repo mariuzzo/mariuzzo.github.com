@@ -8,7 +8,7 @@ import { theme } from '../styles/theme'
 
 import * as S from './MainLayout.styles'
 
-export const MainLayout: React.FC = ({ children }) => {
+export const MainLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <S.Container>

@@ -25,10 +25,14 @@ type SEOProps = {
 }
 
 export const SEO: React.FC<SEOProps> = ({
-  description,
-  lang,
-  meta,
-  image,
+  description = '',
+  lang = 'en',
+  meta = [],
+  image = {
+    src: '/images/icon.png',
+    height: 1040,
+    width: 1040
+  },
   title,
   pathname,
   breadcrumbs = [],
@@ -174,15 +178,4 @@ export const SEO: React.FC<SEOProps> = ({
       }
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-  image: {
-    src: '/images/icon.png',
-    height: 1040,
-    width: 1040
-  }
 }

@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
-import { up } from 'styled-breakpoints'
 
 import { PageTitle, TextBlock } from '../components/Typography'
 import { Link } from '../components/Link'
 import { $theme } from '../styles/theme'
+import { theme } from '../theme'
 
 export const Container = styled.div``
 
@@ -15,12 +15,12 @@ export const PostCategory = styled.div`
   font-size: ${$theme.fontSize.l3}rem;
   font-weight: ${$theme.fontWeight.light};
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     font-size: ${$theme.fontSize.l2}rem;
     margin: 2rem 0;
   }
 
-  ${up('desktop')} {
+  ${theme.breakpoints.up('xl')} {
     margin: 3rem 0;
   }
 `

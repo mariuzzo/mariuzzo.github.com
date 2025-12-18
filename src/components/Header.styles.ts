@@ -1,9 +1,9 @@
-import { up } from 'styled-breakpoints'
 import styled from 'styled-components'
 
 import { $theme } from '../styles/theme'
 
 import { Link } from './Link'
+import { theme } from '../theme'
 
 export const Container = styled.header`
   display: grid;
@@ -12,7 +12,7 @@ export const Container = styled.header`
   align-items: center;
   margin: 1rem 0 2rem 0;
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     margin: 2rem 0;
   }
 `
@@ -23,7 +23,7 @@ export const Brand = styled.div`
   display: grid;
   justify-content: center;
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     grid-column: 1 / 1;
   }
 `
@@ -54,7 +54,7 @@ export const Nav = styled.nav`
   display: grid;
   justify-content: center;
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     grid-row: 1;
     grid-column: 2;
     justify-content: end;
@@ -69,7 +69,7 @@ export const NavMenu = styled.ul`
   column-gap: 2em;
   grid-template-columns: repeat(3, auto);
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     grid-template-columns: repeat(4, auto);
   }
 `
@@ -78,7 +78,7 @@ export const NavMenuItem = styled.li`
   &:first-child {
     display: none;
 
-    ${up('tablet')} {
+    ${theme.breakpoints.up('lg')} {
       display: block;
     }
   }

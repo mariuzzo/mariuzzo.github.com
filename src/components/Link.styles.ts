@@ -43,7 +43,7 @@ export const linkStyles = css<LinkProps>`
   ${(props) => props.variant === 'block' && linkBlockStyles}
 `
 
-export const ExternalLink = styled.a`
+export const ExternalLink = styled.a<LinkProps>`
   ${linkStyles};
 `
 
@@ -51,7 +51,7 @@ ExternalLink.defaultProps = {
   variant: 'inline'
 }
 
-export const InternalLink = styled(GatsbyLink)`
+export const InternalLink = styled(GatsbyLink)<LinkProps>`
   ${linkStyles};
 `
 

@@ -1,9 +1,8 @@
-import { up } from 'styled-breakpoints'
 import styled from 'styled-components'
-
 import { $theme } from '../styles/theme'
 
 import { linkInlineStyles } from './Link.styles'
+import { theme } from '../theme'
 
 export const Heading1 = styled.h1`
   font-weight: ${$theme.fontWeight.black};
@@ -27,7 +26,7 @@ export const PageTitle = styled.h1`
   line-height: 1em;
   margin: 0.2em 0 2rem 0;
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     font-size: ${$theme.fontSize.l1}rem;
     line-height: 1.5em;
   }

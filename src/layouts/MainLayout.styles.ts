@@ -1,5 +1,5 @@
-import { up } from 'styled-breakpoints'
 import styled from 'styled-components'
+import { theme } from '../theme'
 
 export const Container = styled.div`
   display: grid;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: auto;
   padding: 0 1rem;
 
-  ${up('tablet')} {
+  ${theme.breakpoints.up('lg')} {
     padding: 0 2rem;
   }
 `
