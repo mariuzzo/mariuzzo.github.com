@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/mariuzzo/mariuzzo.github.com#readme",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
