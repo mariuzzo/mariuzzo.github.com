@@ -14,9 +14,10 @@ const IndexPage: React.FC = () => {
           <code className="language-javascript">
             // TODO: Complete website...
             <br />
-            // I'm currently fighting a cancer again. This is the second time.
+            // I'm currently fighting a cancer again. This is{' '}
+            <Link to="/lymphoma/2025-09-18/">the third time</Link>.
             <br />
-            // I created a blog about it, which I'm migrating{' '}
+            // I created a blog about it, take a look at it{' '}
             <Link to="/lymphoma">here</Link>.
           </code>
         </pre>
