@@ -28,9 +28,12 @@ export const AboutPage: React.FC = () => {
           <a href="https://x-team.com/case-studies/">
             helping leading companies to succeed
           </a>
-          . <strong>However, I have taken a pause to focus on my health</strong>
-          . I write about my journey fighting a cancer on a{' '}
-          <Link to="/lymphoma">dedicated blog</Link>.
+          .{' '}
+          <strong>
+            Also, I write about my journey fighting a cancer since 2016 on
+            a{' '}
+          </strong>
+          <Link to="/lymphoma">dedicated blog here</Link>.
         </p>
         <p>
           When I'm not working, I am coding... Yes, this is a true hobby of
