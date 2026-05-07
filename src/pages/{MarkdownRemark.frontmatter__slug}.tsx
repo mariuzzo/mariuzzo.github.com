@@ -42,6 +42,12 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
 
   const category = getBlogNameById(categoryId)
 
+  const ogImage = {
+    src: `/images/og${frontmatter.slug}.png`,
+    width: 1200,
+    height: 630
+  }
+
   return (
     <>
       <SEO
@@ -50,6 +56,7 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
           { name: category, url: `/${categoryId}` },
           { name: frontmatter.title }
         ]}
+        image={ogImage}
       />
       <PostLayout
         {...more}
