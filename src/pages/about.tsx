@@ -5,10 +5,13 @@ import { SEO } from '../components/SEO'
 import { Heading2, PageTitle, TextBlock } from '../components/Typography'
 import { MainLayout } from '../layouts/MainLayout'
 
+export const Head = () => (
+  <SEO title="About" description="Who is Rubens Mariuzzo?" />
+)
+
 export const AboutPage: React.FC = () => {
   return (
     <MainLayout>
-      <SEO title="About" description="Who is Rubens Mariuzzo?" />
       <PageTitle>About Mariuzzo</PageTitle>
       <TextBlock>
         <p>

@@ -28,6 +28,25 @@ type TemplateProps = {
   }
 }
 
+export const Head: React.FC<TemplateProps> = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+  const categoryId = frontmatter.slug.split('/')[1]
+  return (
+    <SEO
+      title={frontmatter.title}
+      breadcrumbs={[
+        { name: getBlogNameById(categoryId), url: `/${categoryId}` },
+        { name: frontmatter.title }
+      ]}
+      image={{
+        src: `/images/og${frontmatter.slug}.png`,
+        width: 1200,
+        height: 630
+      }}
+    />
+  )
+}
+
 const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const { markdownRemark, allMarkdownRemark } = data
   const { frontmatter, html } = markdownRemark
@@ -40,34 +59,16 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
   const previousSlug = slugs[slugs.indexOf(frontmatter.slug) - 1]
   const nextSlug = slugs[slugs.indexOf(frontmatter.slug) + 1]
 
-  const category = getBlogNameById(categoryId)
-
-  const ogImage = {
-    src: `/images/og${frontmatter.slug}.png`,
-    width: 1200,
-    height: 630
-  }
-
   return (
-    <>
-      <SEO
-        title={frontmatter.title}
-        breadcrumbs={[
-          { name: category, url: `/${categoryId}` },
-          { name: frontmatter.title }
-        ]}
-        image={ogImage}
-      />
-      <PostLayout
-        {...more}
-        title={frontmatter.title}
-        date={parseISO(frontmatter.date)}
-        category={category}
-        contents={html}
-        previousSlug={previousSlug}
-        nextSlug={nextSlug}
-      />
-    </>
+    <PostLayout
+      {...more}
+      title={frontmatter.title}
+      date={parseISO(frontmatter.date)}
+      category={getBlogNameById(categoryId)}
+      contents={html}
+      previousSlug={previousSlug}
+      nextSlug={nextSlug}
+    />
   )
 }
 

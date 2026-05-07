@@ -5,10 +5,11 @@ import { SEO } from '../components/SEO'
 import { TextBlock } from '../components/Typography'
 import { MainLayout } from '../layouts/MainLayout'
 
+export const Head = () => <SEO title="Home" />
+
 const IndexPage: React.FC = () => {
   return (
     <MainLayout>
-      <SEO title="Home" />
       <TextBlock>
         <pre className="language-javascript">
           <code className="language-javascript">

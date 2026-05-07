@@ -22,6 +22,10 @@ type CodePageProps = {
   }
 }
 
+export const Head = () => (
+  <SEO title="Code" description="Recent posts about code." />
+)
+
 const CodePage: React.FC<CodePageProps> = ({ data, ...more }) => {
   const posts = data.allMarkdownRemark.edges.map((e) => ({
     id: e.node.id,
@@ -30,12 +34,7 @@ const CodePage: React.FC<CodePageProps> = ({ data, ...more }) => {
     slug: e.node.frontmatter.slug
   }))
 
-  return (
-    <>
-      <SEO title="Code" description="Recent posts about code." />
-      <CodePostsListView {...more} posts={posts} />
-    </>
-  )
+  return <CodePostsListView {...more} posts={posts} />
 }
 
 export const pageQuery = graphql`

@@ -22,6 +22,10 @@ type LymphomaPageProps = {
   }
 }
 
+export const Head = () => (
+  <SEO title="Lymphoma" description="Recent posts about Lymphoma" />
+)
+
 const LymphomaPage: React.FC<LymphomaPageProps> = ({ data, ...more }) => {
   const posts = data.allMarkdownRemark.edges.map((e) => ({
     id: e.node.id,
@@ -30,12 +34,7 @@ const LymphomaPage: React.FC<LymphomaPageProps> = ({ data, ...more }) => {
     slug: e.node.frontmatter.slug
   }))
 
-  return (
-    <>
-      <SEO title="Lymphoma" description="Recent posts about Lymphoma" />
-      <LymphomaPostsListView {...more} posts={posts} />
-    </>
-  )
+  return <LymphomaPostsListView {...more} posts={posts} />
 }
 
 export const pageQuery = graphql`
