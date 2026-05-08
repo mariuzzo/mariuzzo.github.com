@@ -54,30 +54,6 @@ export const PostContents = styled(TextBlock).attrs({
   as: 'article'
 })``
 
-export const TranslateBar = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  margin: 1.5rem 0;
-`
-
-export const TranslateLink = styled.a`
-  font-size: ${$theme.fontSize.copy2}rem;
-  color: ${$theme.color.copyLight};
-  font-weight: ${$theme.fontWeight.semiBold};
-  text-decoration: none;
-  border: 1.5px solid ${$theme.color.copyLight};
-  border-radius: 999px;
-  padding: 0.25em 0.9em;
-  transition: ${$theme.transition.default};
-
-  &:hover {
-    color: ${$theme.color.copy};
-    border-color: ${$theme.color.copy};
-    background-color: ${$theme.color.copy}0D;
-  }
-`
-
 export const PostFooter = styled.footer`
   display: grid;
   grid-template-columns: max-content 1fr max-content;

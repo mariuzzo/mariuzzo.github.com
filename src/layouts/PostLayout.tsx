@@ -37,29 +37,6 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
           </S.PostOccurrence>
         )}
         <S.PostDate>{formatRFC7231(date)}</S.PostDate>
-        <S.TranslateBar>
-          <S.TranslateLink
-            href={`https://translate.google.com/translate?hl=es&sl=auto&u=${typeof window !== 'undefined' ? window.location.href : ''}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Traducir
-          </S.TranslateLink>
-          <S.TranslateLink
-            href={`https://translate.google.com/translate?hl=ht&sl=auto&u=${typeof window !== 'undefined' ? window.location.href : ''}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tradwi
-          </S.TranslateLink>
-          <S.TranslateLink
-            href={`https://translate.google.com/translate?u=${typeof window !== 'undefined' ? window.location.href : ''}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Translate
-          </S.TranslateLink>
-        </S.TranslateBar>
         <S.PostContents dangerouslySetInnerHTML={{ __html: contents }} />
         <S.PostFooter>
           {previousSlug && (
