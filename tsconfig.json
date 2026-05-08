@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["esnext"],
+    "types": ["node"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -9,8 +10,10 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "node10",
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
+    "rootDir": "./src",
     "outDir": "./dist",
     "declaration": true,
     "jsx": "react"
