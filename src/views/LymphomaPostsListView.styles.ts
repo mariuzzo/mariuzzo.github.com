@@ -40,9 +40,24 @@ export const PostCardTitle = styled.h3`
   line-height: 1;
 `
 
-export const PostCardMeta = styled.div``
+export const PostCardMeta = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+`
 
 export const PostCardDateDistance = styled.span`
   font-weight: ${$theme.fontWeight.light};
   font-size: ${$theme.fontSize.copy2}rem;
+`
+
+export const PostCardOccurrenceBadge = styled.span`
+  font-size: ${$theme.fontSize.copy2}rem;
+  font-weight: ${$theme.fontWeight.semiBold};
+  color: ${$theme.color.primary};
+  background-color: ${$theme.color.secondary}33;
+  border: 1px solid ${$theme.color.secondary};
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  line-height: 1.4;
 `

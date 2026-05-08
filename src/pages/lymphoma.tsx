@@ -15,6 +15,7 @@ type LymphomaPageProps = {
             date: string
             slug: string
             title: string
+            occurrence: number
           }
         }
       }>
@@ -31,7 +32,8 @@ const LymphomaPage: React.FC<LymphomaPageProps> = ({ data, ...more }) => {
     id: e.node.id,
     title: e.node.frontmatter.title,
     date: parseISO(e.node.frontmatter.date),
-    slug: e.node.frontmatter.slug
+    slug: e.node.frontmatter.slug,
+    occurrence: e.node.frontmatter.occurrence
   }))
 
   return <LymphomaPostsListView {...more} posts={posts} />
@@ -50,6 +52,7 @@ export const pageQuery = graphql`
             date
             slug
             title
+            occurrence
           }
         }
       }

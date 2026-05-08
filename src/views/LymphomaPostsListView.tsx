@@ -12,6 +12,7 @@ type LymphomaPostsListViewProps = {
     title: string
     date: Date
     slug: string
+    occurrence: number
   }>
 }
 
@@ -35,6 +36,9 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
                 <S.PostCardDateDistance title={formatRFC7231(post.date)}>
                   {daysAgo(post.date)}
                 </S.PostCardDateDistance>
+                <S.PostCardOccurrenceBadge>
+                  Occurrence {post.occurrence}
+                </S.PostCardOccurrenceBadge>
               </S.PostCardMeta>
             </S.PostCard>
           </S.PostCardListItem>
