@@ -45,7 +45,7 @@ function buildCard(title: string, category: string, formattedDate: string) {
               color: '#FFFFFF',
               padding: '6px 20px',
               borderRadius: '4px',
-              fontSize: '22px',
+              fontSize: '30px',
               fontWeight: 400,
               textTransform: 'uppercase',
               letterSpacing: '3px'
@@ -58,7 +58,7 @@ function buildCard(title: string, category: string, formattedDate: string) {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <span
             style={{
-              fontSize: '56px',
+              fontSize: '100px',
               fontWeight: 900,
               color: '#3D3D3D',
               lineHeight: 1.2
@@ -75,10 +75,10 @@ function buildCard(title: string, category: string, formattedDate: string) {
             alignItems: 'center'
           }}
         >
-          <span style={{ fontSize: '24px', color: '#707070', fontWeight: 400 }}>
+          <span style={{ fontSize: '40px', color: '#707070', fontWeight: 400 }}>
             {formattedDate}
           </span>
-          <span style={{ fontSize: '28px', color: '#695CFF', fontWeight: 600 }}>
+          <span style={{ fontSize: '40px', color: '#695CFF', fontWeight: 600 }}>
             mariuzzo.com
           </span>
         </div>
