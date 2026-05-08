@@ -20,6 +20,17 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
   posts,
   ...more
 }) => {
+  const postsByOccurrence = posts.reduce<Map<number, typeof posts>>(
+    (acc, post) => {
+      const group = acc.get(post.occurrence) ?? []
+      group.push(post)
+      acc.set(post.occurrence, group)
+      return acc
+    },
+    new Map()
+  )
+  const occurrences = Array.from(postsByOccurrence.keys()).sort((a, b) => b - a)
+
   return (
     <MainLayout {...more}>
       <S.Title>
@@ -27,23 +38,28 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
         <br />
         my Hodgkin's Lymphoma
       </S.Title>
-      <S.PostCardList>
-        {posts.map((post) => (
-          <S.PostCardListItem key={post.id}>
-            <S.PostCard to={post.slug}>
-              <S.PostCardTitle>{post.title}</S.PostCardTitle>
-              <S.PostCardMeta>
-                <S.PostCardDateDistance title={formatRFC7231(post.date)}>
-                  {daysAgo(post.date)}
-                </S.PostCardDateDistance>
-                <S.PostCardOccurrenceBadge>
-                  Occurrence {post.occurrence}
-                </S.PostCardOccurrenceBadge>
-              </S.PostCardMeta>
-            </S.PostCard>
-          </S.PostCardListItem>
-        ))}
-      </S.PostCardList>
+      {occurrences.map((occurrence) => (
+        <React.Fragment key={occurrence}>
+          <S.OccurrenceDivider>Occurrence {occurrence}</S.OccurrenceDivider>
+          <S.PostCardList>
+            {(postsByOccurrence.get(occurrence) ?? []).map((post) => (
+              <S.PostCardListItem key={post.id}>
+                <S.PostCard to={post.slug}>
+                  <S.PostCardTitle>{post.title}</S.PostCardTitle>
+                  <S.PostCardMeta>
+                    <S.PostCardDateDistance title={formatRFC7231(post.date)}>
+                      {daysAgo(post.date)}
+                    </S.PostCardDateDistance>
+                    <S.PostCardOccurrenceBadge>
+                      Occurrence {post.occurrence}
+                    </S.PostCardOccurrenceBadge>
+                  </S.PostCardMeta>
+                </S.PostCard>
+              </S.PostCardListItem>
+            ))}
+          </S.PostCardList>
+        </React.Fragment>
+      ))}
     </MainLayout>
   )
 }

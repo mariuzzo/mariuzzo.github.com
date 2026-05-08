@@ -51,7 +51,25 @@ export const PostCardDateDistance = styled.span`
   font-size: ${$theme.fontSize.copy2}rem;
 `
 
+export const OccurrenceDivider = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0 0.5rem;
+  font-size: ${$theme.fontSize.copy2}rem;
+  font-weight: ${$theme.fontWeight.semiBold};
+  color: ${$theme.color.copyLight};
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid ${$theme.color.secondary};
+  }
+`
+
 export const PostCardOccurrenceBadge = styled.span`
+  margin-left: auto;
   font-size: ${$theme.fontSize.copy2}rem;
   font-weight: ${$theme.fontWeight.semiBold};
   color: ${$theme.color.primary};

@@ -27,6 +27,23 @@ export const PostCategory = styled.div`
 
 export const PostTitle = styled(PageTitle)``
 
+export const PostOccurrence = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+`
+
+export const PostOccurrenceBadge = styled.span`
+  font-size: ${$theme.fontSize.copy2}rem;
+  font-weight: ${$theme.fontWeight.semiBold};
+  color: ${$theme.color.primary};
+  background-color: ${$theme.color.secondary}33;
+  border: 1px solid ${$theme.color.secondary};
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  line-height: 1.4;
+`
+
 export const PostDate = styled.small`
   display: block;
   text-align: center;

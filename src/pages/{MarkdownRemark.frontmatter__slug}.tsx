@@ -14,6 +14,7 @@ type TemplateProps = {
         date: string
         slug: string
         title: string
+        occurrence: number | null
       }
     }
     allMarkdownRemark: {
@@ -65,6 +66,7 @@ const Template: React.FC<TemplateProps> = ({ data, ...more }) => {
       title={frontmatter.title}
       date={parseISO(frontmatter.date)}
       category={getBlogNameById(categoryId)}
+      occurrence={frontmatter.occurrence ?? undefined}
       contents={html}
       previousSlug={previousSlug}
       nextSlug={nextSlug}
@@ -82,6 +84,7 @@ export const pageQuery = graphql`
         date
         slug
         title
+        occurrence
       }
     }
     allMarkdownRemark(sort: { frontmatter: { date: ASC } }) {
