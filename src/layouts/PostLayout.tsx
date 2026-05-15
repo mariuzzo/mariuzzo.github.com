@@ -31,7 +31,7 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
         <S.PostTitle>{title}</S.PostTitle>
         {chapter != null && (
           <S.PostOccurrence>
-            <S.PostOccurrenceBadge>Occurrence {chapter}</S.PostOccurrenceBadge>
+            <S.PostOccurrenceBadge>Chapter {chapter}</S.PostOccurrenceBadge>
           </S.PostOccurrence>
         )}
         <S.PostDate>{formatRFC7231(date)}</S.PostDate>
