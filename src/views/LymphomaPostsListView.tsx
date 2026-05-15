@@ -12,7 +12,7 @@ type LymphomaPostsListViewProps = {
     title: string
     date: Date
     slug: string
-    occurrence: number
+    chapter: number
   }>
 }
 
@@ -20,16 +20,16 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
   posts,
   ...more
 }) => {
-  const postsByOccurrence = posts.reduce<Map<number, typeof posts>>(
+  const postsByChapter = posts.reduce<Map<number, typeof posts>>(
     (acc, post) => {
-      const group = acc.get(post.occurrence) ?? []
+      const group = acc.get(post.chapter) ?? []
       group.push(post)
-      acc.set(post.occurrence, group)
+      acc.set(post.chapter, group)
       return acc
     },
     new Map()
   )
-  const occurrences = Array.from(postsByOccurrence.keys()).sort((a, b) => b - a)
+  const chapters = Array.from(postsByChapter.keys()).sort((a, b) => b - a)
 
   return (
     <MainLayout {...more}>
@@ -38,11 +38,11 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
         <br />
         my Hodgkin's Lymphoma
       </S.Title>
-      {occurrences.map((occurrence) => (
-        <React.Fragment key={occurrence}>
-          <S.OccurrenceDivider>Occurrence {occurrence}</S.OccurrenceDivider>
+      {chapters.map((chapter) => (
+        <React.Fragment key={chapter}>
+          <S.OccurrenceDivider>Chapter {chapter}</S.OccurrenceDivider>
           <S.PostCardList>
-            {(postsByOccurrence.get(occurrence) ?? []).map((post) => (
+            {(postsByChapter.get(chapter) ?? []).map((post) => (
               <S.PostCardListItem key={post.id}>
                 <S.PostCard to={post.slug}>
                   <S.PostCardTitle>{post.title}</S.PostCardTitle>
@@ -51,7 +51,7 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
                       {daysAgo(post.date)}
                     </S.PostCardDateDistance>
                     <S.PostCardOccurrenceBadge>
-                      Occurrence {post.occurrence}
+                      Chapter {post.chapter}
                     </S.PostCardOccurrenceBadge>
                   </S.PostCardMeta>
                 </S.PostCard>

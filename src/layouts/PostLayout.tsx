@@ -8,7 +8,7 @@ type PostLayoutProps = {
   title: string
   date: Date
   category: string
-  occurrence?: number
+  chapter?: number
   contents: any
   previousSlug: string
   nextSlug: string
@@ -18,7 +18,7 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
   title,
   date,
   category,
-  occurrence,
+  chapter,
   contents,
   previousSlug,
   nextSlug,
@@ -29,11 +29,9 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
       <S.Container>
         <S.PostCategory>{category}</S.PostCategory>
         <S.PostTitle>{title}</S.PostTitle>
-        {occurrence != null && (
+        {chapter != null && (
           <S.PostOccurrence>
-            <S.PostOccurrenceBadge>
-              Occurrence {occurrence}
-            </S.PostOccurrenceBadge>
+            <S.PostOccurrenceBadge>Occurrence {chapter}</S.PostOccurrenceBadge>
           </S.PostOccurrence>
         )}
         <S.PostDate>{formatRFC7231(date)}</S.PostDate>
