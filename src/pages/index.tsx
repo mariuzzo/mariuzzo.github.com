@@ -1,28 +1,31 @@
 import * as React from 'react'
 
-import { Link } from '../components/Link'
 import { SEO } from '../components/SEO'
-import { TextBlock } from '../components/Typography'
 import { MainLayout } from '../layouts/MainLayout'
+import * as S from './index.styles'
 
 export const Head = () => <SEO title="Home" />
 
 const IndexPage: React.FC = () => {
   return (
     <MainLayout>
-      <TextBlock>
-        <pre className="language-javascript">
-          <code className="language-javascript">
-            // TODO: Complete website...
-            <br />
-            // I'm currently fighting a cancer again. This is{' '}
-            <Link to="/lymphoma/2025-09-18/">the third time</Link>.
-            <br />
-            // I created a blog about it, take a look at it{' '}
-            <Link to="/lymphoma">here</Link>.
-          </code>
-        </pre>
-      </TextBlock>
+      <S.Hero>
+        <S.Greeting>Hi, I'm Rubens</S.Greeting>
+      </S.Hero>
+      <S.CardGrid>
+        <S.Card to="/code">
+          <S.CardIcon>{'{ }'}</S.CardIcon>
+          <S.CardTitle>Code</S.CardTitle>
+          <S.CardDescription>I build things.</S.CardDescription>
+          <S.CardCTA>See my work →</S.CardCTA>
+        </S.Card>
+        <S.Card to="/lymphoma">
+          <S.CardIcon>♥</S.CardIcon>
+          <S.CardTitle>Lymphoma</S.CardTitle>
+          <S.CardDescription>I fight things.</S.CardDescription>
+          <S.CardCTA>Read my journey →</S.CardCTA>
+        </S.Card>
+      </S.CardGrid>
     </MainLayout>
   )
 }
