@@ -33,11 +33,7 @@ export const LymphomaPostsListView: React.FC<LymphomaPostsListViewProps> = ({
 
   return (
     <MainLayout {...more}>
-      <S.Title>
-        Recent posts about
-        <br />
-        my Hodgkin's Lymphoma
-      </S.Title>
+      <S.Title>My ongoing journey with lymphoma</S.Title>
       {chapters.map((chapter) => (
         <React.Fragment key={chapter}>
           <S.OccurrenceDivider>Chapter {chapter}</S.OccurrenceDivider>

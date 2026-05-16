@@ -22,7 +22,7 @@ export const CodePostsListView: React.FC<CodePostsListViewProps> = ({
   return (
     <MainLayout {...more}>
       <S.Title>
-        Recent posts about
+        Old posts about
         <br />
         code
       </S.Title>
