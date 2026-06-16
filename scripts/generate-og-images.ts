@@ -1,90 +1,52 @@
 import fs from 'fs'
 import path from 'path'
-import React from 'react'
+import { fileURLToPath } from 'url'
 import matter from 'gray-matter'
 import satori from 'satori'
+import { html } from 'satori-html'
 import sharp from 'sharp'
 import { format } from 'date-fns'
 
 const WIDTH = 1200
 const HEIGHT = 630
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 
 function buildCard(title: string, category: string, formattedDate: string) {
-  return (
+  // Keep tags adjacent (no whitespace text nodes) — satori requires every
+  // multi-child element to declare an explicit display value.
+  return html`<div
+    style="display: flex; width: ${WIDTH}px; height: ${HEIGHT}px; background-color: #F6F4F4; font-family: 'Source Sans Pro';"
+  >
     <div
-      style={{
-        display: 'flex',
-        width: `${WIDTH}px`,
-        height: `${HEIGHT}px`,
-        backgroundColor: '#F6F4F4',
-        fontFamily: 'Source Sans Pro'
-      }}
+      style="display: flex; width: 8px; height: 100%; background-color: #695CFF; flex-shrink: 0;"
+    ></div>
+    <div
+      style="display: flex; flex-direction: column; justify-content: space-between; padding: 60px; flex: 1;"
     >
-      <div
-        style={{
-          width: '8px',
-          height: '100%',
-          backgroundColor: '#695CFF',
-          flexShrink: 0
-        }}
-      />
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          padding: '60px',
-          flex: 1
-        }}
-      >
-        <div style={{ display: 'flex' }}>
-          <span
-            style={{
-              backgroundColor: '#695CFF',
-              color: '#FFFFFF',
-              padding: '6px 20px',
-              borderRadius: '4px',
-              fontSize: '30px',
-              fontWeight: 400,
-              textTransform: 'uppercase',
-              letterSpacing: '3px'
-            }}
-          >
-            {category}
-          </span>
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <span
-            style={{
-              fontSize: '100px',
-              fontWeight: 900,
-              color: '#3D3D3D',
-              lineHeight: 1.2
-            }}
-          >
-            {title}
-          </span>
-        </div>
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center'
-          }}
+      <div style="display: flex;">
+        <span
+          style="background-color: #695CFF; color: #FFFFFF; padding: 6px 20px; border-radius: 4px; font-size: 30px; font-weight: 400; text-transform: uppercase; letter-spacing: 3px;"
+          >${category}</span
         >
-          <span style={{ fontSize: '40px', color: '#707070', fontWeight: 400 }}>
-            {formattedDate}
-          </span>
-          <span style={{ fontSize: '40px', color: '#695CFF', fontWeight: 600 }}>
-            mariuzzo.com
-          </span>
-        </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <span
+          style="font-size: 100px; font-weight: 900; color: #3D3D3D; line-height: 1.2;"
+          >${title}</span
+        >
+      </div>
+      <div
+        style="display: flex; justify-content: space-between; align-items: center;"
+      >
+        <span style="font-size: 40px; color: #707070; font-weight: 400;"
+          >${formattedDate}</span
+        ><span style="font-size: 40px; color: #695CFF; font-weight: 600;"
+          >mariuzzo.com</span
+        >
       </div>
     </div>
-  )
+  </div>`
 }
 
 async function main() {
@@ -132,7 +94,7 @@ async function main() {
     const category: string = slug.split('/').filter(Boolean)[0] ?? ''
     const formattedDate = format(date, 'MMMM d, yyyy')
 
-    const outputPath = path.join(ROOT, 'public', 'images', 'og', `${slug}.png`)
+    const outputPath = path.join(ROOT, 'static', 'images', 'og', `${slug}.png`)
     fs.mkdirSync(path.dirname(outputPath), { recursive: true })
 
     const svg = await satori(buildCard(title, category, formattedDate), {
