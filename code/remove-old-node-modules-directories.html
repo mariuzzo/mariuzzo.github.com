@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../images/icon-192.png" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f9f8f8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BVNP5VG5EZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      // Respect Do Not Track, matching the previous gatsby-plugin-google-gtag config.
+      if (navigator.doNotTrack !== '1' && window.doNotTrack !== '1') {
+        gtag('js', new Date())
+        gtag('config', 'G-BVNP5VG5EZ')
+      }
+    </script>
+    <link href="../_app/immutable/entry/start.2c-6q9qx.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CT8i10l7.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.Esju6Qg8.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.Cc7PFYb0.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DVtWNYSp.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.kGYnaLH1.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BhBUSlZJ.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CnwZKZwi.js" rel="modulepreload">
+		<!--ojxrft--><meta name="description" content="Experience on programming and lymphoma."/> <meta name="keywords" content="Code,Lymphoma,Blog,Rubens,Mariuzzo"/> <meta property="og:title" content="Remove old node modules to claim space"/> <meta property="og:description" content="Experience on programming and lymphoma."/> <meta property="og:type" content="article"/> <!--[0--><meta property="article:published_time" content="2020-11-13T13:30:00.000Z"/><!--]--> <meta name="twitter:creator" content="Rubens Mariuzzo"/> <meta name="twitter:title" content="Remove old node modules to claim space"/> <meta name="twitter:description" content="Experience on programming and lymphoma."/> <!--[0--><meta property="og:image" content="https://www.mariuzzo.com/images/og/code/remove-old-node-modules-directories.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta name="twitter:card" content="summary_large_image"/><!--]--> <!--[-1--><!--]--> <!--[0--><!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Code","item":"https://www.mariuzzo.com/code"},{"@type":"ListItem","position":2,"name":"Remove old node modules to claim space"}]}</script><!----><!--]--><!----><title>Remove old node modules to claim space | Mariuzzo</title>
+		<link href="../_app/immutable/assets/0.BaYJjWWs.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/3.BItpAQ1B.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="container svelte-12qhfyh"><nav class="header svelte-1elxaub"><div class="brand svelte-1elxaub"><a class="brand-link svelte-1elxaub" href="/"><span class="svelte-1elxaub">M</span>ariuzzo</a></div> <div class="nav svelte-1elxaub"><ul class="nav-menu svelte-1elxaub"><li class="nav-menu-item nav-menu-item--home svelte-1elxaub"><a class="nav-menu-link svelte-1elxaub" href="/">Home</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/code">Code</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/lymphoma">Lymphoma</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/about">About</a></li></ul></div></nav><!----> <main><!--[--><!----> <div class="post-category svelte-c09rm7">Code</div> <h1 class="page-title">Remove old node modules to claim space</h1> <!--[-1--><!--]--> <small class="post-date svelte-c09rm7"><time datetime="2020-11-13T13:30:00.000Z">November 13, 2020</time><!----></small> <article class="prose"><!----><p>At the time of writing this: I have 74 Node projects in my machine. Each of them have dozens of dependencies installed in a <code>node_modules</code> directory. And a few them takes 1GB of disk space. 😱</p>
+<p>I decided to write a command that would remove <em>node modules</em> directories that I'm no longer using. For myself, I determined that any project that I haven't touched in the last 3 months was a good candidate for cleanup. Anyway, if I need to take on an old project, I would just have to <code>npm i</code> and wait a few seconds or minutes.</p>
+<p>I ended up composing 2 commands: one for checking the size of <em>node modules</em> before deleting, and the other to actually remove these directories.</p>
+<p><strong>Note:</strong> The following commands assume that all projects are under the same parent directory. From that parent directory, these commands needs to be executed.</p>
+<h2>Checking the size of old node modules</h2>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line"><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> d <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-ctime</span> +90 <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-name</span> node_modules <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-depth</span> <span class="token number">2</span> <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-exec</span> <span class="token function">du</span> <span class="token parameter variable">-hs</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
+</span></code></pre>
+<h2>Removing old node modules directories</h2>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line"><span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-type</span> d <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-ctime</span> +90 <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-name</span> node_modules <span class="token punctuation">\</span>
+</span><span class="code-line">       <span class="token parameter variable">-depth</span> <span class="token number">2</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">rm</span> <span class="token parameter variable">-rf</span>
+</span></code></pre>
+<p>That's it! Removing old <em>node modules</em> directories have freed around 10GB from my machine. That's a win for me! Hope you find this useful.</p><!----></article> <footer class="post-footer svelte-c09rm7"><!--[0--><a class="post-nav post-nav--prev svelte-c09rm7" href="/code/guide-create-a-node-js-command-line-package"><span class="svelte-c09rm7">←</span>Previous</a><!--]--> <!--[-1--><!--]--></footer><!--]--><!----></main> <footer class="footer svelte-jz8lnl"><span class="brand-initial svelte-jz8lnl">M</span>ariuzzo</footer><!----></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1x6vnte = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.2c-6q9qx.js"),
+						import("../_app/immutable/entry/app.Esju6Qg8.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,{type:"data",data:{post:{id:"/code/remove-old-node-modules-directories",title:"Remove old node modules to claim space",date:"2020-11-13T13:30:00.000Z",slug:"/code/remove-old-node-modules-directories",category:"code",chapter:void 0,html:"\u003Cp>At the time of writing this: I have 74 Node projects in my machine. Each of them have dozens of dependencies installed in a \u003Ccode>node_modules\u003C/code> directory. And a few them takes 1GB of disk space. 😱\u003C/p>\n\u003Cp>I decided to write a command that would remove \u003Cem>node modules\u003C/em> directories that I'm no longer using. For myself, I determined that any project that I haven't touched in the last 3 months was a good candidate for cleanup. Anyway, if I need to take on an old project, I would just have to \u003Ccode>npm i\u003C/code> and wait a few seconds or minutes.\u003C/p>\n\u003Cp>I ended up composing 2 commands: one for checking the size of \u003Cem>node modules\u003C/em> before deleting, and the other to actually remove these directories.\u003C/p>\n\u003Cp>\u003Cstrong>Note:\u003C/strong> The following commands assume that all projects are under the same parent directory. From that parent directory, these commands needs to be executed.\u003C/p>\n\u003Ch2>Checking the size of old node modules\u003C/h2>\n\u003Cpre class=\"language-shell\">\u003Ccode class=\"language-shell code-highlight\">\u003Cspan class=\"code-line\">\u003Cspan class=\"token function\">find\u003C/span> \u003Cspan class=\"token builtin class-name\">.\u003C/span> \u003Cspan class=\"token parameter variable\">-type\u003C/span> d \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-ctime\u003C/span> +90 \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-name\u003C/span> node_modules \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-depth\u003C/span> \u003Cspan class=\"token number\">2\u003C/span> \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-exec\u003C/span> \u003Cspan class=\"token function\">du\u003C/span> \u003Cspan class=\"token parameter variable\">-hs\u003C/span> \u003Cspan class=\"token punctuation\">{\u003C/span>\u003Cspan class=\"token punctuation\">}\u003C/span> \u003Cspan class=\"token punctuation\">\\\u003C/span>\u003Cspan class=\"token punctuation\">;\u003C/span>\n\u003C/span>\u003C/code>\u003C/pre>\n\u003Ch2>Removing old node modules directories\u003C/h2>\n\u003Cpre class=\"language-shell\">\u003Ccode class=\"language-shell code-highlight\">\u003Cspan class=\"code-line\">\u003Cspan class=\"token function\">find\u003C/span> \u003Cspan class=\"token builtin class-name\">.\u003C/span> \u003Cspan class=\"token parameter variable\">-type\u003C/span> d \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-ctime\u003C/span> +90 \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-name\u003C/span> node_modules \u003Cspan class=\"token punctuation\">\\\u003C/span>\n\u003C/span>\u003Cspan class=\"code-line\">       \u003Cspan class=\"token parameter variable\">-depth\u003C/span> \u003Cspan class=\"token number\">2\u003C/span> \u003Cspan class=\"token operator\">|\u003C/span> \u003Cspan class=\"token function\">xargs\u003C/span> \u003Cspan class=\"token function\">rm\u003C/span> \u003Cspan class=\"token parameter variable\">-rf\u003C/span>\n\u003C/span>\u003C/code>\u003C/pre>\n\u003Cp>That's it! Removing old \u003Cem>node modules\u003C/em> directories have freed around 10GB from my machine. That's a win for me! Hope you find this useful.\u003C/p>"},categoryName:"Code",previousSlug:"/code/guide-create-a-node-js-command-line-package",nextSlug:null},uses:{params:["category","slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
