@@ -1,5 +1,5 @@
 ---
-date: 2020-11-13T09:30:00.000
+date: 2020-11-13T09:30:00.000-04:00
 title: 'Remove old node modules to claim space'
 slug: /code/remove-old-node-modules-directories
 ---

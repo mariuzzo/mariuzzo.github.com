@@ -1,0 +1,188 @@
+@import 'normalize.css/normalize.css';
+
+@import '@fontsource/source-sans-pro/300.css';
+@import '@fontsource/source-sans-pro/400.css';
+@import '@fontsource/source-sans-pro/600.css';
+@import '@fontsource/source-sans-pro/900.css';
+
+@import '@fontsource/source-code-pro/400.css';
+@import '@fontsource/source-code-pro/600.css';
+
+@import 'prismjs/themes/prism-okaidia.css';
+
+/* Theme tokens (ported from the previous styled-components theme). */
+:root {
+  --unit: 16px;
+
+  --color-copy: #3d3d3d;
+  --color-copy-light: #707070;
+  --color-background: #f6f4f4;
+  --color-link: #695cff;
+  --color-primary: #695cff;
+  --color-secondary: #c7c2ff;
+
+  --font-size-base: 1rem;
+  --font-size-l1: 3rem; /* 48px */
+  --font-size-l2: 2.25rem; /* 36px */
+  --font-size-l3: 1.5rem; /* 24px */
+  --font-size-copy1: 1.25rem; /* 20px */
+  --font-size-copy2: 1rem; /* 16px */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-black: 900;
+
+  --transition-default: ease-in-out 0.3s all;
+}
+
+/* Breakpoints (styled-breakpoints defaults previously used via `up()`):
+ *   md: 768px, lg: 992px, xl: 1200px
+ */
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--color-copy);
+  background-color: var(--color-background);
+  font-size: var(--unit);
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * Apply a natural box layout model to all elements, but allowing components to change.
+ * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-color: var(--color-link);
+  outline-offset: 0.5rem;
+}
+
+/* Shared typography (ported from the previous Typography styled-components). */
+.page-title {
+  color: var(--color-copy);
+  text-align: center;
+  font-size: var(--font-size-l2);
+  font-weight: var(--font-weight-black);
+  line-height: 1em;
+  margin: 0.2em 0 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .page-title {
+    font-size: var(--font-size-l1);
+    line-height: 1.5em;
+  }
+}
+
+.heading-1 {
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-l1);
+  line-height: 1;
+  margin: 1em 0;
+}
+
+.heading-2 {
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-l2);
+  line-height: 1;
+  margin: 1em 0;
+}
+
+/* Inline link styles, used standalone and within prose. */
+.link-inline {
+  color: var(--color-link);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.link-inline:hover {
+  text-decoration: none;
+}
+
+.link-block {
+  display: inline-block;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--color-primary) 87%, transparent);
+  padding: 1em 1.5em;
+  color: var(--color-background);
+  border-radius: 0.2em;
+  font-size: 1.2rem;
+  transition: var(--transition-default);
+}
+
+.link-block:hover,
+.link-block:focus {
+  background-color: var(--color-primary);
+}
+
+.link-block:active {
+  transition: none;
+  background-color: color-mix(in srgb, var(--color-primary) 87%, transparent);
+}
+
+/* Prose / rich text block (TextBlock), also used to style rendered markdown. */
+.prose {
+  color: var(--color-copy);
+  font-size: var(--font-size-copy1);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+}
+
+.prose img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.prose a {
+  color: var(--color-link);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.prose a:hover {
+  text-decoration: none;
+}
+
+.prose p {
+  margin: 1.5em 0;
+}
+
+.prose strong {
+  font-weight: var(--font-weight-black);
+}
+
+.prose pre {
+  border-radius: 0.2em;
+}
+
+.prose code {
+  font-family:
+    'Source Code Pro', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.85em;
+}
+
+.prose *:not(pre) > code {
+  border-radius: 0.2em;
+  padding: 0.1em 0.5em;
+  background-color: #27282288;
+}
+
+.prose blockquote {
+  font-style: italic;
+  margin: 1em;
+  padding: 0 1em;
+  border-left: var(--color-copy-light) solid 2px;
+}

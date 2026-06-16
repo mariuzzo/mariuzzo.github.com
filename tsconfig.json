@@ -1,22 +1,14 @@
 {
+  "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["esnext"],
-    "types": ["node"],
-    "skipLibCheck": true,
+    "allowJs": true,
+    "checkJs": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "CommonJS",
-    "moduleResolution": "node10",
-    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "declaration": true,
-    "jsx": "react"
-  },
-  "include": ["src"]
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "bundler"
+  }
 }

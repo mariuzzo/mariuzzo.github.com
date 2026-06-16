@@ -3,10 +3,13 @@ import inquirer from 'inquirer'
 import fs from 'fs'
 import path from 'path'
 import util from 'util'
+import { fileURLToPath } from 'url'
 import { format, formatISO } from 'date-fns'
 import { untoken } from 'untoken'
 
 const writeFile = util.promisify(fs.writeFile)
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const prompt = inquirer.createPromptModule()
 

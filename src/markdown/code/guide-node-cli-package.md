@@ -1,5 +1,5 @@
 ---
-date: 2017-08-18T11:47:25.000
+date: 2017-08-18T11:47:25.000-04:00
 title: 'Guide: creating a NodeJS command-line package'
 slug: /code/guide-create-a-node-js-command-line-package
 ---
@@ -120,7 +120,7 @@ npm unlink
 
 That is it for a concise guide on creating a NodeJS command-line package. With those four steps, we have the basics to ship a NodeJS package that will install a command-line package.
 
-Now, it is up to you to _commit_, _push_ and _unleash_ your creativity by coding a NodeJS command-line package. If you do so, please, [send me a message](/about/contact) in the comments with the GitHub link so I can peek in.
+Now, it is up to you to _commit_, _push_ and _unleash_ your creativity by coding a NodeJS command-line package. If you do so, please, [send me a message](/about) in the comments with the GitHub link so I can peek in.
 
 ## Recommendations
 
