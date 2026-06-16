@@ -1,3 +1,6 @@
 node_modules/
-.cache/
-public
+.svelte-kit/
+build/
+
+# OG images are generated at build time (npm run generate-og).
+static/images/og/
