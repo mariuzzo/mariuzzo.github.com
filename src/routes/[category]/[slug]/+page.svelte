@@ -1,12 +1,11 @@
 <script lang="ts">
-  import { formatRFC7231, parseISO } from 'date-fns'
   import SEO from '$lib/components/SEO.svelte'
+  import PostDate from '$lib/components/PostDate.svelte'
   import type { PageData } from './$types'
 
   let { data }: { data: PageData } = $props()
 
   const post = $derived(data.post)
-  const date = $derived(parseISO(post.date))
 </script>
 
 <SEO
@@ -16,6 +15,7 @@
     { name: post.title }
   ]}
   image={{ src: `/images/og${post.slug}.png`, width: 1200, height: 630 }}
+  publishedTime={post.date}
 />
 
 <div class="post-category">{data.categoryName}</div>
@@ -25,7 +25,7 @@
     <span class="post-occurrence-badge">Chapter {post.chapter}</span>
   </div>
 {/if}
-<small class="post-date">{formatRFC7231(date)}</small>
+<small class="post-date"><PostDate date={post.date} /></small>
 <article class="prose">
   {@html post.html}
 </article>

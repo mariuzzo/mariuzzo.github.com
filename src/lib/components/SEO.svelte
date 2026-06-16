@@ -9,13 +9,15 @@
     description = '',
     image = { src: '/images/icon.png', width: 1040, height: 1040 },
     breadcrumbs = [],
-    noIndex = false
+    noIndex = false,
+    publishedTime
   }: {
     title: string
     description?: string
     image?: Image
     breadcrumbs?: Breadcrumb[]
     noIndex?: boolean
+    publishedTime?: string
   } = $props()
 
   const metaDescription = $derived(description || site.description)
@@ -48,7 +50,10 @@
   <meta name="keywords" content={site.keywords.join(',')} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={metaDescription} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={publishedTime ? 'article' : 'website'} />
+  {#if publishedTime}
+    <meta property="article:published_time" content={publishedTime} />
+  {/if}
   <meta name="twitter:creator" content={site.author} />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={metaDescription} />

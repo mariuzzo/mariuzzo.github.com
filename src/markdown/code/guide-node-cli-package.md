@@ -1,5 +1,5 @@
 ---
-date: 2017-08-18T11:47:25.000
+date: 2017-08-18T11:47:25.000-04:00
 title: 'Guide: creating a NodeJS command-line package'
 slug: /code/guide-create-a-node-js-command-line-package
 ---

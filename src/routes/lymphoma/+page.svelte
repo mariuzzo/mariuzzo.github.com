@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { formatRFC7231, parseISO } from 'date-fns'
   import SEO from '$lib/components/SEO.svelte'
-  import { daysAgo } from '$lib/date'
+  import PostDate from '$lib/components/PostDate.svelte'
   import type { PageData } from './$types'
 
   let { data }: { data: PageData } = $props()
@@ -31,13 +30,12 @@
   <div class="occurrence-divider">Chapter {chapter}</div>
   <ol class="post-card-list">
     {#each postsByChapter.get(chapter) ?? [] as post (post.id)}
-      {@const date = parseISO(post.date)}
       <li>
         <a class="post-card" href={post.slug}>
           <h3 class="post-card-title">{post.title}</h3>
           <div class="post-card-meta">
-            <span class="post-card-date" title={formatRFC7231(date)}>
-              {daysAgo(date)}
+            <span class="post-card-date">
+              <PostDate date={post.date} />
             </span>
             <span class="post-card-badge">Chapter {post.chapter}</span>
           </div>
