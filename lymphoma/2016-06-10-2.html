@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="../favicon.png" />
-    <link rel="apple-touch-icon" href="../images/icon-192.png" />
+    <link
+      rel="apple-touch-icon"
+      href="../images/icon-192.png"
+    />
     <link rel="manifest" href="../manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f9f8f8" />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var theme =
+            stored === 'dark' || stored === 'light'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          document.documentElement.setAttribute('data-theme', theme)
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta)
+            meta.setAttribute(
+              'content',
+              theme === 'dark' ? '#19191d' : '#f9f8f8'
+            )
+        } catch (e) {}
+      })()
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -23,22 +46,22 @@
         gtag('config', 'G-BVNP5VG5EZ')
       }
     </script>
-    <link href="../_app/immutable/entry/start.BMGHZhLS.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/CT8i10l7.js" rel="modulepreload">
-		<link href="../_app/immutable/entry/app.Esju6Qg8.js" rel="modulepreload">
+    <link href="../_app/immutable/entry/start.BxqLJJAe.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/HSAJe2cf.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.B0THc4Q1.js" rel="modulepreload">
 		<link href="../_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
 		<link href="../_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/0.Cc7PFYb0.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/DVtWNYSp.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/3.kGYnaLH1.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/BhBUSlZJ.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/CnwZKZwi.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.CMQO3-9g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BOb3TxbH.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.Bpq612tG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DhiyORfU.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BIrm7qxM.js" rel="modulepreload">
 		<!--ojxrft--><meta name="description" content="Experience on programming and lymphoma."/> <meta name="keywords" content="Code,Lymphoma,Blog,Rubens,Mariuzzo"/> <meta property="og:title" content="3rd chemo"/> <meta property="og:description" content="Experience on programming and lymphoma."/> <meta property="og:type" content="article"/> <!--[0--><meta property="article:published_time" content="2016-06-10T07:31:39.000Z"/><!--]--> <meta name="twitter:creator" content="Rubens Mariuzzo"/> <meta name="twitter:title" content="3rd chemo"/> <meta name="twitter:description" content="Experience on programming and lymphoma."/> <!--[0--><meta property="og:image" content="https://www.mariuzzo.com/images/og/lymphoma/2016-06-10-2.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta name="twitter:card" content="summary_large_image"/><!--]--> <!--[-1--><!--]--> <!--[0--><!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lymphoma","item":"https://www.mariuzzo.com/lymphoma"},{"@type":"ListItem","position":2,"name":"3rd chemo"}]}</script><!----><!--]--><!----><title>3rd chemo | Mariuzzo</title>
-		<link href="../_app/immutable/assets/0.BaYJjWWs.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.BuZioY1c.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/3.BItpAQ1B.css" rel="stylesheet">
   </head>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="container svelte-12qhfyh"><nav class="header svelte-1elxaub"><div class="brand svelte-1elxaub"><a class="brand-link svelte-1elxaub" href="/"><span class="svelte-1elxaub">M</span>ariuzzo</a></div> <div class="nav svelte-1elxaub"><ul class="nav-menu svelte-1elxaub"><li class="nav-menu-item nav-menu-item--home svelte-1elxaub"><a class="nav-menu-link svelte-1elxaub" href="/">Home</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/code">Code</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/lymphoma">Lymphoma</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/about">About</a></li></ul></div></nav><!----> <main><!--[--><!----> <div class="post-category svelte-c09rm7">Lymphoma</div> <h1 class="page-title">3rd chemo</h1> <!--[0--><div class="post-occurrence svelte-c09rm7"><span class="post-occurrence-badge svelte-c09rm7">Chapter 1</span></div><!--]--> <small class="post-date svelte-c09rm7"><time datetime="2016-06-10T07:31:39.000Z">June 10, 2016</time><!----></small> <article class="prose"><!----><p><img src="/images/lymphoma/o8jdsrnQHi1vsn3evo1.jpg" alt="3rd chemo"></p>
+    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="container svelte-12qhfyh"><nav class="header svelte-1elxaub"><div class="brand svelte-1elxaub"><a class="brand-link svelte-1elxaub" href="/"><span class="svelte-1elxaub">M</span>ariuzzo</a></div> <div class="nav svelte-1elxaub"><ul class="nav-menu svelte-1elxaub"><li class="nav-menu-item nav-menu-item--home svelte-1elxaub"><a class="nav-menu-link svelte-1elxaub" href="/">Home</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/code">Code</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/lymphoma">Lymphoma</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/about">About</a></li> <li class="nav-menu-item nav-menu-item--theme svelte-1elxaub"><button class="theme-toggle svelte-1cmi4dh" type="button" aria-label="Switch to dark mode"><!--[-1--><svg viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><!--]--></button><!----></li></ul></div></nav><!----> <main><!--[--><!----> <div class="post-category svelte-c09rm7">Lymphoma</div> <h1 class="page-title">3rd chemo</h1> <!--[0--><div class="post-occurrence svelte-c09rm7"><span class="post-occurrence-badge svelte-c09rm7">Chapter 1</span></div><!--]--> <small class="post-date svelte-c09rm7"><time datetime="2016-06-10T07:31:39.000Z">June 10, 2016</time><!----></small> <article class="prose"><!----><p><img src="/images/lymphoma/o8jdsrnQHi1vsn3evo1.jpg" alt="3rd chemo"></p>
 <p>I don't like to be negative. Today, I got my 3rd dose of chemo and it was <strong>painful, stressful and crumbling</strong>. As you may notice, at the beginning of this week I got <strong>Neutropenia</strong> which means my white blood cells count was very low, under the reference range. Also, I injected myself with <strong>Filgrastim</strong> to stimulate the bone marrow to produce the needed white blood cells, and cover the loss. All this produced a high fever in me that started at the end of the chemo dose which I didn't detect. I was feeling really frozen. I got a white shirt under my t-shirt plus a jacket. The nurse gave me a coat, and my wife gave me another one. Even with all these things covering me, I was trembling with cold.</p>
 <p>Then it wasn't until I got home that I used a thermometer to check my temperature under my armpit, it was: 39.4C which is considered as a high fever (<a href="http://www.webmd.com/first-aid/fever-in-adults-treatment#1">taking the temp under the armpit is less accurate than oral or rectal</a>).</p>
 <p>I was feeling dizzy. I just wanted to be laid down on my bed. My extraordinary wife gave me Acetaminophen, she prepared me an all-natural soup with potatoes and carrots, she also prepared a tea with Jamaica Flowers, onions, lemon and honey, and she prepared lemon juice with honey and Passion Fruit juice. Indeed, the fever started going down from 39.4C to 38.6C then it continued going down to 37.8 and finally 36.3C. <em>Woohoo!</em></p>
@@ -60,15 +83,15 @@ Weeping may come in the evening, but <strong>in the morning, there is a joyful c
 			
 			<script>
 				{
-					__sveltekit_1oa2kkf = {
+					__sveltekit_14scot5 = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.BMGHZhLS.js"),
-						import("../_app/immutable/entry/app.Esju6Qg8.js")
+						import("../_app/immutable/entry/start.BxqLJJAe.js"),
+						import("../_app/immutable/entry/app.B0THc4Q1.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],

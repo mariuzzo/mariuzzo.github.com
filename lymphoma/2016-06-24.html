@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="../favicon.png" />
-    <link rel="apple-touch-icon" href="../images/icon-192.png" />
+    <link
+      rel="apple-touch-icon"
+      href="../images/icon-192.png"
+    />
     <link rel="manifest" href="../manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f9f8f8" />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var theme =
+            stored === 'dark' || stored === 'light'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          document.documentElement.setAttribute('data-theme', theme)
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta)
+            meta.setAttribute(
+              'content',
+              theme === 'dark' ? '#19191d' : '#f9f8f8'
+            )
+        } catch (e) {}
+      })()
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -23,22 +46,22 @@
         gtag('config', 'G-BVNP5VG5EZ')
       }
     </script>
-    <link href="../_app/immutable/entry/start.BMGHZhLS.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/CT8i10l7.js" rel="modulepreload">
-		<link href="../_app/immutable/entry/app.Esju6Qg8.js" rel="modulepreload">
+    <link href="../_app/immutable/entry/start.BxqLJJAe.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/HSAJe2cf.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.B0THc4Q1.js" rel="modulepreload">
 		<link href="../_app/immutable/chunks/kNaey6uv.js" rel="modulepreload">
 		<link href="../_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/0.Cc7PFYb0.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/DVtWNYSp.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/3.kGYnaLH1.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/BhBUSlZJ.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/CnwZKZwi.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.CMQO3-9g.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BOb3TxbH.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/3.Bpq612tG.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DhiyORfU.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BIrm7qxM.js" rel="modulepreload">
 		<!--ojxrft--><meta name="description" content="Experience on programming and lymphoma."/> <meta name="keywords" content="Code,Lymphoma,Blog,Rubens,Mariuzzo"/> <meta property="og:title" content="4th chemo: Thursday, June 23rd, 2016"/> <meta property="og:description" content="Experience on programming and lymphoma."/> <meta property="og:type" content="article"/> <!--[0--><meta property="article:published_time" content="2016-06-24T04:31:03.000Z"/><!--]--> <meta name="twitter:creator" content="Rubens Mariuzzo"/> <meta name="twitter:title" content="4th chemo: Thursday, June 23rd, 2016"/> <meta name="twitter:description" content="Experience on programming and lymphoma."/> <!--[0--><meta property="og:image" content="https://www.mariuzzo.com/images/og/lymphoma/2016-06-24.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta name="twitter:card" content="summary_large_image"/><!--]--> <!--[-1--><!--]--> <!--[0--><!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lymphoma","item":"https://www.mariuzzo.com/lymphoma"},{"@type":"ListItem","position":2,"name":"4th chemo: Thursday, June 23rd, 2016"}]}</script><!----><!--]--><!----><title>4th chemo: Thursday, June 23rd, 2016 | Mariuzzo</title>
-		<link href="../_app/immutable/assets/0.BaYJjWWs.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.BuZioY1c.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/3.BItpAQ1B.css" rel="stylesheet">
   </head>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="container svelte-12qhfyh"><nav class="header svelte-1elxaub"><div class="brand svelte-1elxaub"><a class="brand-link svelte-1elxaub" href="/"><span class="svelte-1elxaub">M</span>ariuzzo</a></div> <div class="nav svelte-1elxaub"><ul class="nav-menu svelte-1elxaub"><li class="nav-menu-item nav-menu-item--home svelte-1elxaub"><a class="nav-menu-link svelte-1elxaub" href="/">Home</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/code">Code</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/lymphoma">Lymphoma</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/about">About</a></li></ul></div></nav><!----> <main><!--[--><!----> <div class="post-category svelte-c09rm7">Lymphoma</div> <h1 class="page-title">4th chemo: Thursday, June 23rd, 2016</h1> <!--[0--><div class="post-occurrence svelte-c09rm7"><span class="post-occurrence-badge svelte-c09rm7">Chapter 1</span></div><!--]--> <small class="post-date svelte-c09rm7"><time datetime="2016-06-24T04:31:03.000Z">June 24, 2016</time><!----></small> <article class="prose"><!----><p><img src="/images/lymphoma/o992rrcdWi1vsn3evo1.jpg" alt="4th chemo"></p>
+    <div style="display: contents"><!--[--><!--[0--><!--[--><div class="container svelte-12qhfyh"><nav class="header svelte-1elxaub"><div class="brand svelte-1elxaub"><a class="brand-link svelte-1elxaub" href="/"><span class="svelte-1elxaub">M</span>ariuzzo</a></div> <div class="nav svelte-1elxaub"><ul class="nav-menu svelte-1elxaub"><li class="nav-menu-item nav-menu-item--home svelte-1elxaub"><a class="nav-menu-link svelte-1elxaub" href="/">Home</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/code">Code</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/lymphoma">Lymphoma</a></li> <li class="nav-menu-item"><a class="nav-menu-link svelte-1elxaub" href="/about">About</a></li> <li class="nav-menu-item nav-menu-item--theme svelte-1elxaub"><button class="theme-toggle svelte-1cmi4dh" type="button" aria-label="Switch to dark mode"><!--[-1--><svg viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><!--]--></button><!----></li></ul></div></nav><!----> <main><!--[--><!----> <div class="post-category svelte-c09rm7">Lymphoma</div> <h1 class="page-title">4th chemo: Thursday, June 23rd, 2016</h1> <!--[0--><div class="post-occurrence svelte-c09rm7"><span class="post-occurrence-badge svelte-c09rm7">Chapter 1</span></div><!--]--> <small class="post-date svelte-c09rm7"><time datetime="2016-06-24T04:31:03.000Z">June 24, 2016</time><!----></small> <article class="prose"><!----><p><img src="/images/lymphoma/o992rrcdWi1vsn3evo1.jpg" alt="4th chemo"></p>
 <p>Today, I went for my 4th dose of <a href="https://en.wikipedia.org/wiki/ABVD">ABVD chemo</a>. Unfortunately, the <em>Vinblastine</em> (<strong>V</strong> from <a href="https://en.wikipedia.org/wiki/ABVD">ABVD</a>) was out of stock, but… there was only one 10mg bottle and I needed 6mg. Thanks to Jehovah that I got it for me. But, as I said, 'unfortunately' for any other person who would need that same kind of medicine for today. I asked the nurse what would happen if in a next dose, there's one component missing. She explained multiple ways of getting it via foundations or another hospital. Phew! I'm prepared in case it affects us again.</p>
 <p>About this dose, <strong>it was the best</strong>, almost no pain, no freeze, no fever, all good! I just got more dark stains on my hands and feet. As I said, that's just a cosmetic side effect. Nothing to worry about. 😛</p>
 <p>Now, I'm writing this from home. I'm feeling normal, just a little bit of fatigue, nothing serious. I have already drunk 2L of water, and I will continue for the rest of the night. <strong>Drinking a lot of water is a way to protect my body, by doing this I'm forcing my system to drain the toxicity of the chemo cocktail.</strong></p>
@@ -50,15 +73,15 @@ A help that is readily found in times of distress.</p>
 			
 			<script>
 				{
-					__sveltekit_1oa2kkf = {
+					__sveltekit_14scot5 = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.BMGHZhLS.js"),
-						import("../_app/immutable/entry/app.Esju6Qg8.js")
+						import("../_app/immutable/entry/start.BxqLJJAe.js"),
+						import("../_app/immutable/entry/app.B0THc4Q1.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
