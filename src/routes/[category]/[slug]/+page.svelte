@@ -45,7 +45,7 @@
 <style>
   .post-category {
     display: block;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     text-align: center;
     margin: 1rem 0;
     font-size: var(--font-size-l3);

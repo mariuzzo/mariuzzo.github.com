@@ -15,10 +15,10 @@
   --unit: 16px;
 
   --color-copy: #3d3d3d;
-  --color-copy-light: #707070;
+  --color-copy-light: #4d4d4d;
   --color-background: #f6f4f4;
-  --color-link: #695cff;
-  --color-primary: #695cff;
+  --color-link: #453da8;
+  --color-primary: #453da8;
   --color-secondary: #c7c2ff;
 
   --font-size-base: 1rem;
@@ -42,20 +42,20 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     --color-copy: #e4e4e7;
-    --color-copy-light: #a1a1aa;
+    --color-copy-light: #a9a9ae;
     --color-background: #19191d;
-    --color-link: #a79dff;
-    --color-primary: #a79dff;
+    --color-link: #aea5ff;
+    --color-primary: #aea5ff;
     --color-secondary: #4a4380;
   }
 }
 
 :root[data-theme='dark'] {
   --color-copy: #e4e4e7;
-  --color-copy-light: #a1a1aa;
+  --color-copy-light: #a9a9ae;
   --color-background: #19191d;
-  --color-link: #a79dff;
-  --color-primary: #a79dff;
+  --color-link: #aea5ff;
+  --color-primary: #aea5ff;
   --color-secondary: #4a4380;
 }
 
@@ -201,7 +201,8 @@ html {
 .prose *:not(pre) > code {
   border-radius: 0.2em;
   padding: 0.1em 0.5em;
-  background-color: #27282288;
+  color: #f8f8f2;
+  background-color: #272822;
 }
 
 .prose blockquote {
