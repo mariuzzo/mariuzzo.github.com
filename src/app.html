@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <link rel="apple-touch-icon" href="%sveltekit.assets%/images/icon-192.png" />
+    <link
+      rel="apple-touch-icon"
+      href="%sveltekit.assets%/images/icon-192.png"
+    />
     <link rel="manifest" href="%sveltekit.assets%/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f9f8f8" />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var theme =
+            stored === 'dark' || stored === 'light'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          document.documentElement.setAttribute('data-theme', theme)
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta)
+            meta.setAttribute(
+              'content',
+              theme === 'dark' ? '#19191d' : '#f9f8f8'
+            )
+        } catch (e) {}
+      })()
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async

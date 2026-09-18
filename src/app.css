@@ -36,6 +36,29 @@
   --transition-default: ease-in-out 0.3s all;
 }
 
+/* Dark mode: follows the system preference by default, overridden by an
+ * explicit `data-theme` attribute set by the theme toggle (see app.html and
+ * ThemeToggle.svelte). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-copy: #e4e4e7;
+    --color-copy-light: #a1a1aa;
+    --color-background: #19191d;
+    --color-link: #a79dff;
+    --color-primary: #a79dff;
+    --color-secondary: #4a4380;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-copy: #e4e4e7;
+  --color-copy-light: #a1a1aa;
+  --color-background: #19191d;
+  --color-link: #a79dff;
+  --color-primary: #a79dff;
+  --color-secondary: #4a4380;
+}
+
 /* Breakpoints (styled-breakpoints defaults previously used via `up()`):
  *   md: 768px, lg: 992px, xl: 1200px
  */
@@ -48,6 +71,7 @@ body {
   font-size: var(--unit);
   padding: 0;
   margin: 0;
+  transition: var(--transition-default);
 }
 
 /**

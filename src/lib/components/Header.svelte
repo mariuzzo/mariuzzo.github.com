@@ -1,3 +1,7 @@
+<script lang="ts">
+  import ThemeToggle from './ThemeToggle.svelte'
+</script>
+
 <nav class="header">
   <div class="brand">
     <a class="brand-link" href="/"><span>M</span>ariuzzo</a>
@@ -15,6 +19,9 @@
       </li>
       <li class="nav-menu-item">
         <a class="nav-menu-link" href="/about">About</a>
+      </li>
+      <li class="nav-menu-item nav-menu-item--theme">
+        <ThemeToggle />
       </li>
     </ul>
   </div>
@@ -68,12 +75,17 @@
     margin: 0;
     padding: 0;
     display: grid;
+    align-items: center;
     column-gap: 2em;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
   }
 
   .nav-menu-item--home {
     display: none;
+  }
+
+  .nav-menu-item--theme {
+    display: grid;
   }
 
   .nav-menu-link {
@@ -103,7 +115,7 @@
     }
 
     .nav-menu {
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(5, auto);
     }
 
     .nav-menu-item--home {
