@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { site } from '$lib/site'
+  import { site } from '#lib/site.js'
 
   type Breadcrumb = { name: string; url?: string }
   type Image = { src: string; width: number; height: number }

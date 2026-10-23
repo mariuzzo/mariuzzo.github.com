@@ -1,6 +1,6 @@
 <script lang="ts">
-  import SEO from '$lib/components/SEO.svelte'
-  import PostDate from '$lib/components/PostDate.svelte'
+  import SEO from '#lib/components/SEO.svelte'
+  import PostDate from '#lib/components/PostDate.svelte'
   import type { PageData } from './$types'
 
   let { data }: { data: PageData } = $props()
