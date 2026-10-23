@@ -1,10 +1,25 @@
 import adapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import { sveltekit } from '@sveltejs/kit/vite'
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
+
+// Posts are loaded server-side via `import.meta.glob`, so editing a markdown
+// file only invalidates the SSR module graph. Force the browser to reload.
+function reloadOnMarkdownChange(): Plugin {
+  return {
+    name: 'reload-on-markdown-change',
+    hotUpdate({ file }) {
+      if (this.environment.name === 'client' && file.endsWith('.md')) {
+        this.environment.hot.send({ type: 'full-reload' })
+        return []
+      }
+    }
+  }
+}
 
 export default defineConfig({
   plugins: [
+    reloadOnMarkdownChange(),
     sveltekit({
       preprocess: vitePreprocess(),
       // GitHub Pages serves static files only, so everything is prerendered.
